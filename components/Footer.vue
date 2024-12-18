@@ -66,20 +66,26 @@
               </ul>
               <h2 class="footer-heading mt-5">Subscribe Us</h2>
               <form @submit.prevent="submitSubscription" class="subscribe-form">
-                <div class="form-group d-flex">
-                  <input
-                    v-model="formData.email"
-                    type="email"
-                    class="form-control rounded-left"
-                    placeholder="Enter email address"
-                    required
-                  />
-                  <input type="submit" value="Subscribe" class="form-control submit px-3 rounded-right" />
-                </div>
-              </form>
-              <div v-if="responseMessage" :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }" class="mt-3">
-                {{ responseMessage }}
-              </div>
+  <div class="form-group d-flex">
+    <input
+      v-model="formData.email"
+      type="email"
+      class="form-control rounded-left"
+      placeholder="Enter email address"
+      required
+    />
+    <input 
+      type="submit" 
+      :value="isSubmitting ? 'Sending...' : 'Subscribe'" 
+      class="form-control submit px-3 rounded-right" 
+      :disabled="isSubmitting"
+    />
+  </div>
+</form>
+<div v-if="responseMessage" :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }" class="mt-3">
+  {{ responseMessage }}
+</div>
+
             </div>
           </div>
         </div>
@@ -117,10 +123,12 @@ export default {
       },
       responseMessage: "",
       isSuccess: false,
+      isSubmitting: false, // Новый флаг для отслеживания состояния отправки
     };
   },
   methods: {
     async submitSubscription() {
+      this.isSubmitting = true; // Устанавливаем флаг отправки
       try {
         const response = await fetch("/api/form-handler", {
           method: "POST",
@@ -144,11 +152,14 @@ export default {
         this.responseMessage = "Failed to connect to the server.";
         this.isSuccess = false;
         console.error("Error in subscription:", error);
+      } finally {
+        this.isSubmitting = false; // Сбрасываем флаг отправки
       }
     },
   },
 };
 </script>
+
 
 <style scoped>
 .footer-03 {
