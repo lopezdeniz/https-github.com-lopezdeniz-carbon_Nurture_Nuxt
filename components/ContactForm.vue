@@ -34,12 +34,24 @@
           required
         ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary custom-btn">Send</button>
+      <div class="d-flex justify-content-center w-100">
+  <button 
+    type="submit" 
+    class="btn btn-primary custom-btn" 
+    :disabled="isSubmitting"
+  >
+    {{ isSubmitting ? "Sending..." : "Send" }}
+  </button>
+</div>
+
     </form>
 
-    <div v-if="responseMessage" :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }" class="mt-3">
+    <!-- Центрирование сообщения -->
+  <div v-if="responseMessage" class="d-flex justify-content-center mt-3">
+    <div :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }">
       {{ responseMessage }}
     </div>
+  </div>
   </section>
 </template>
 
@@ -56,10 +68,12 @@ export default {
       },
       responseMessage: "",
       isSuccess: false,
+      isSubmitting: false, // Переменная для отслеживания отправки
     };
   },
   methods: {
     async submitForm() {
+      this.isSubmitting = true; // Блокируем кнопку при отправке
       try {
         const response = await fetch("/api/form-handler", {
           method: "POST",
@@ -83,6 +97,8 @@ export default {
         this.responseMessage = "Connection error with the server.";
         this.isSuccess = false;
         console.error(error);
+      } finally {
+        this.isSubmitting = false; // Разблокируем кнопку после отправки
       }
     },
     resetForm() {
@@ -118,3 +134,6 @@ export default {
   border-color: #085a9c;
 }
 </style>
+
+
+
