@@ -77,11 +77,14 @@
 }
 
  /* Navigation Link Styles */
-.nav-link {
+ .nav-link {
   color: #ffffff; /* Link Color */
-  font-weight: normal; /* Убираем жирность текста */
+  font-weight: 500; /* Полужирный текст */
+  font-size: 18px;
+  font-family: 'MazzardH-SemiBold', sans-serif; 
   transition: color 0.3s ease;
 }
+
 
 
 .navbar {
@@ -104,6 +107,9 @@
     border: none;
     padding: 0.7rem 2rem;
     border-radius: 30px;
+    font-weight: 500; 
+  font-size: 18px;
+  font-family: 'MazzardH-SemiBold', sans-serif; 
   }
   .btn-primary:hover {
     background-color: #0B6E4F; /* Darker Shade on Hover */
