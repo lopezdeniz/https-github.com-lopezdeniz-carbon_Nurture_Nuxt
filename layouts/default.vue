@@ -9,8 +9,8 @@
   </template>
   
   <script>
-  import PageHeader from "~/components/Header.vue"; // Ваш компонент шапки
-  import AppFooter from "~/components/Footer.vue"; // Ваш компонент футера
+  import PageHeader from "~/components/Header.vue"; //  компонент шапки
+  import AppFooter from "~/components/Footer.vue"; //  компонент футера
   
   export default {
     components: {

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'MazzardH-SemiBold';
+	src: url('/assets/fonts/mazzardh-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/mazzardh-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/assets/fonts/mazzardh-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/assets/fonts/mazzardh-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/assets/fonts/mazzardh-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/assets/fonts/mazzardh-semibold.svg#mazzardh-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    font-family: 'MazzardH-SemiBold', sans-serif;
+}

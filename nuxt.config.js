@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   css: [
     "bootstrap/dist/css/bootstrap.min.css", // Подключение CSS Bootstrap
+    "@/assets/css/main.css" // Подключение файла main.css
   ],
 
   app: {

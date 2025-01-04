@@ -1,9 +1,12 @@
 <template>
-    <header>
-      <nav class="navbar navbar-expand-lg" style="background-color: #00BFB2;"> <!-- Header Color -->
+    <header class="header-bg">
+      <nav class="navbar navbar-expand-lg"> <!-- Header Color -->
         <div class="container">
           <!-- Logo -->
-          <nuxt-link class="navbar-brand text-uppercase" to="/">Carbon Nurture</nuxt-link>
+          <nuxt-link class="navbar-brand" to="/">
+  <img src="/assets/images/logo.png" alt="Carbon Nurture Logo" />
+</nuxt-link>
+
           <!-- Toggle Button for Mobile -->
           <button
             class="navbar-toggler"
@@ -36,7 +39,7 @@
               </li>
             </ul>
             <!-- CTA Button -->
-            <nuxt-link class="btn btn-primary" to="/purchase">Purchase Now</nuxt-link>
+            <nuxt-link class="btn btn-primary text-dark" to="/purchase">Purchase Now</nuxt-link>
           </div>
         </div>
       </nav>
@@ -55,39 +58,55 @@
   </script>
   
   <style scoped>
+  /* Header Styles */
+.header-bg {
+  background-image: url('/assets/images/header.png'); /*  путь к изображению */
+  background-size: cover;
+  background-position: center;
+  height: 100px; 
+}
+
   /* Logo Styles */
   .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000000; /* Logo Color */
-  }
-  .navbar-brand:hover {
-    color: #f8f9fa; /* Lighter Shade on Hover */
-  }
-  
-  /* Navigation Link Styles */
-  .nav-link {
-    color: #000000; /* Link Color */
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
+  display: flex;
+  align-items: center;
+}
+  .navbar-brand img {
+  height: 50px; 
+  width: auto;  /* Автоматическая ширина для пропорционального масштабирования */
+}
+
+ /* Navigation Link Styles */
+.nav-link {
+  color: #ffffff; /* Link Color */
+  font-weight: normal; /* Убираем жирность текста */
+  transition: color 0.3s ease;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; /*  высота совпадает с высотой шапки */
+}
   .nav-link:hover {
     color: #0B6E4F; /* Hover Color */
   }
   .nav-link.active {
-    font-weight: bold;
-    color: #000000; /* Active Color */
+   
+    color: #ffffff; /* Active Color */
   }
   
   /* Button Styles */
   .btn-primary {
-    background-color: #0B75CD; /* Custom Button Color */
+    background-color: #ffffff; /* Custom Button Color */
     border: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
   }
   .btn-primary:hover {
-    background-color: #0056b3; /* Darker Shade on Hover */
+    background-color: #0B6E4F; /* Darker Shade on Hover */
   }
   </style>
   
