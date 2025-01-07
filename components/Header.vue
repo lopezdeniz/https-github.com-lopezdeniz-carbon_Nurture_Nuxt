@@ -60,7 +60,7 @@
   <style scoped>
   /* Header Styles */
 .header-bg {
-  background-image: url('/assets/images/header.png'); /*  путь к изображению */
+  background-image: url('/assets/images/header.jpg'); /*  путь к изображению */
   background-size: cover;
   background-position: center;
   height: 100px; 

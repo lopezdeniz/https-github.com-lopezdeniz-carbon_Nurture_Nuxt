@@ -21,8 +21,6 @@
   </script>
   
   <style scoped>
-  main {
-    padding: 20px; /* Общие отступы для контента */
-  }
+
   </style>
 
