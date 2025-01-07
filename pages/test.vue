@@ -6,8 +6,7 @@
         
         <!-- Левый блок с текстом -->
         <div class="text-container mb-4 mb-md-0">
-          <h2 class="display-4">Nurture your soil <br> and bank account:</h2>
-          <p class="lead">biodegradable mulch film <br>you can leave at the end of the season.</p>
+        
         </div>
         
         <!-- Правый блок с кнопкой -->
@@ -86,7 +85,7 @@
 
 /* Фоновая секция */
 #hero {
-  background-image: url('/assets/images/baner.jpg');
+  background-image: url('/assets/images/baner2.png');
   background-size: cover;
   background-position: center;
   min-height: 70vh;
