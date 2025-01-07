@@ -37,6 +37,9 @@
               <li class="nav-item">
                 <nuxt-link class="nav-link" :class="{ active: isActive('/contact') }" to="/contact">Contact</nuxt-link>
               </li>
+              <li class="nav-item">
+                <nuxt-link class="nav-link" :class="{ active: isActive('/test') }" to="/test">Test</nuxt-link>
+              </li>
             </ul>
             <!-- CTA Button -->
             <nuxt-link class="btn btn-primary text-dark" to="/purchase">Purchase Now</nuxt-link>
