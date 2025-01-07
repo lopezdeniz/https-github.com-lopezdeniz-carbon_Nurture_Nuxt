@@ -6,8 +6,8 @@
           
           <!-- Левый блок с текстом -->
           <div class="text-container mb-4 mb-md-0">
-            <h2 class="display-4">Start Nurturing Your Carbon Footprint</h2>
-            <p class="lead">Join us to explore affordable and sustainable solutions for your business or personal use.</p>
+            <h2 class="display-4">Nurture your soil <br> and bank account:</h2>
+            <p class="lead">biodegradable mulch film <br>you can leave at the end of the season.</p>
           </div>
           
           <!-- Правый блок с кнопкой -->
@@ -95,15 +95,17 @@
   
   
   
-  
+  /* Контейнер для контента */
   .content-wrapper {
     width: 80%; /* Занимает 80% от родителя */
     max-width: 1150px; /* Ограничение максимальной ширины */
     margin: 0 auto; /* Центрирование по горизонтали */
     display: flex;
-    justify-content: space-between;
-    padding: 0rem;
-    position: relative;
+    flex-direction: column; /* Элементы внутри будут выравниваться в колонку */
+    justify-content: flex-end; /* Элементы будут располагаться снизу */
+    padding: 0; /* Убираем отступы */
+    height: 100%; /* Занимает всю высоту родителя */
+    
   }
   
   
@@ -133,10 +135,10 @@
   .btn-primary {
     background-color: #ffffff; /* Custom Button Color */
     border: none;
-    padding: calc(0.7rem * 2.2) calc(2rem * 2.2); /* Увеличиваем отступы на 20% */
+    padding: calc(0.7rem * 1.2) calc(2rem * 1.2); /* Увеличиваем отступы на 20% */
     border-radius: 40px;
     font-weight: 500;
-    font-size: calc(18px * 1.2); /* Увеличиваем размер шрифта на 20% */
+    font-size: calc(16px * 1.2); /* Увеличиваем размер шрифта на 20% */
     font-family: 'MazzardH-SemiBold', sans-serif;
   }
   
@@ -158,6 +160,27 @@
   }
     
     
+  h2.display-4 {
+    font-size: 5rem; /* Увеличиваем шрифт */
+    font-weight: 500; /* Устанавливаем жирное начертание */
+  }
+  
+  p.lead {
+      font-size: 2rem; /* Увеличиваем шрифт */
+      font-weight: 500; /* Устанавливаем жирное начертание */
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
     
     /* Pricing Section */
