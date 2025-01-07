@@ -1,19 +1,23 @@
 <template>
 
 <div class="custom-container">
-  <section id="hero" class="d-flex justify-content-center align-items-center position-relative">
-    <div class="content-wrapper d-flex justify-content-between w-100">
-      <div class="text-container">
-        <h2 class="display-4">Start Nurturing Your Carbon Footprint</h2>
-        <p class="lead">Join us to explore affordable and sustainable solutions for your business or personal use.</p>
+    <section id="hero" class="d-flex justify-content-center align-items-center position-relative">
+      <div class="content-wrapper d-flex flex-column flex-md-row justify-content-between align-items-end w-100">
+        
+        <!-- Левый блок с текстом -->
+        <div class="text-container mb-4 mb-md-0">
+          <h2 class="display-4">Nurture your soil <br> and bank account:</h2>
+          <p class="lead">biodegradable mulch film <br>you can leave at the end of the season.</p>
+        </div>
+        
+        <!-- Правый блок с кнопкой -->
+        <div class="btn-container">
+          <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
+        </div>
+        
       </div>
-
-      <div class="btn-container">
-        <nuxt-link class="btn btn-primary btn-lg" :to="'/products'">Learn More</nuxt-link>
-      </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 
 
 
@@ -74,50 +78,69 @@
   
   <style scoped>
 
-/* Контейнер шириной 2000px */
+/* Основной контейнер */
 .custom-container {
   max-width: 2000px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* Секция с фоновым изображением */
+/* Фоновая секция */
 #hero {
   background-image: url('/assets/images/baner.jpg');
-  background-size: cover; /* Обновляем для правильного отображения */
-  background-position: center; /* Центрируем фоновое изображение */
-  background-repeat: no-repeat;
-  min-height: 70vh; /* Высота секции адаптируется к экрану */
-  padding: 0 2rem 4rem; /* Внутренние отступы, для адаптивности */
-  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  padding: 2rem;
 }
 
-/* Контейнер для текста и кнопки */
+
+
+/* Контейнер для контента */
 .content-wrapper {
-  position: relative;
+  width: 80%; /* Занимает 80% от родителя */
+  max-width: 1150px; /* Ограничение максимальной ширины */
+  margin: 0 auto; /* Центрирование по горизонтали */
   display: flex;
-  justify-content: space-between;
-  width: 80%; /* Ширина обертки */
-  max-width: 1000px; /* Ограничиваем максимальную ширину */
-  padding: 14rem;
- 
+  flex-direction: column; /* Элементы внутри будут выравниваться в колонку */
+  justify-content: flex-end; /* Элементы будут располагаться снизу */
+  padding: 0; /* Убираем отступы */
+  height: 100%; /* Занимает всю высоту родителя */
+  
 }
 
-/* Текст в левом нижнем углу */
+
+
+
+/* Контейнер текста */
 .text-container {
-  position: absolute;
-  bottom: 20px; /* Отступ снизу */
-  left: 20px; /* Отступ слева */
+  max-width: 60%;
   color: white;
   text-align: left;
+  
 }
 
-/* Кнопка в правом нижнем углу */
+/* Контейнер кнопки */
 .btn-container {
-  position: absolute;
-  bottom: 20px; /* Отступ снизу */
-  right: 20px; /* Отступ справа */
+  align-self: flex-end;
 }
 
+
+
+
+
+
+
+
+/* Button Styles */
+.btn-primary {
+  background-color: #ffffff; /* Custom Button Color */
+  border: none;
+  padding: calc(0.7rem * 1.2) calc(2rem * 1.2); /* Увеличиваем отступы на 20% */
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: calc(16px * 1.2); /* Увеличиваем размер шрифта на 20% */
+  font-family: 'MazzardH-SemiBold', sans-serif;
+}
 
 
 
@@ -137,6 +160,27 @@
 }
   
   
+h2.display-4 {
+  font-size: 5rem; /* Увеличиваем шрифт */
+  font-weight: 500; /* Устанавливаем жирное начертание */
+}
+
+p.lead {
+    font-size: 2rem; /* Увеличиваем шрифт */
+    font-weight: 500; /* Устанавливаем жирное начертание */
+
+}
+
+
+
+
+
+
+
+
+
+
+
   
   
   /* Pricing Section */
