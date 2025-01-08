@@ -1,13 +1,15 @@
 <template>
 
 <div class="custom-container">
-    <section id="hero" class="d-flex justify-content-center align-items-center position-relative">
-      <div class="content-wrapper d-flex flex-column flex-md-row justify-content-between align-items-end w-100">
+    <section id="hero" class="">
+      <div class="content-wrapper ">
         
         <!-- Левый блок с текстом -->
-        <div class="text-container mb-4 mb-md-0">
-        
-        </div>
+        <div class="text-container">
+    <h2 class="hero-heading">Nurture your soil <br>and bank account:</h2>
+    <p class="hero-description">biodegradable mulch film you can <br> leave at the end of the season.</p>
+</div>
+
         
         <!-- Правый блок с кнопкой -->
         <div class="btn-container">
@@ -17,8 +19,7 @@
       </div>
     </section>
   </div>
-
-
+ 
 
 
 
@@ -80,47 +81,45 @@
 /* Основной контейнер */
 .custom-container {
   max-width: 2000px;
-  margin: auto;
+  margin: 0px auto;
+  
 }
 
 /* Фоновая секция */
+/* Фоновая секция */
 #hero {
-  background-image: url('/assets/images/baner2.png');
+  background-image: url('/assets/images/baner.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 70vh;
-  padding: 2rem;
+  min-height: 77vh;
+  display: flex;
+  justify-content: flex-end; /* Выравнивание контента по низу */
+  align-items: flex-end; /* Выравнивание контента по нижнему краю */
+  padding: 20px; /* Отступы для содержимого */
 }
-
-
 
 /* Контейнер для контента */
 .content-wrapper {
-  width: 80%; /* Занимает 80% от родителя */
-  max-width: 1150px; /* Ограничение максимальной ширины */
-  margin: 0 auto; /* Центрирование по горизонтали */
+  width: 100%; /* Контейнер на всю ширину */
+  max-width: 1150px;
   display: flex;
-  flex-direction: column; /* Элементы внутри будут выравниваться в колонку */
-  justify-content: flex-end; /* Элементы будут располагаться снизу */
-  padding: 0; /* Убираем отступы */
-  height: 100%; /* Занимает всю высоту родителя */
-  
+  justify-content: space-between;
+  align-items: flex-end; /* Контент выравнивается по низу */
+  margin: 0 auto;
+  padding:87px 20px; /* Отступы по бокам */
 }
-
-
-
 
 /* Контейнер текста */
 .text-container {
-  max-width: 60%;
-  color: white;
-  text-align: left;
-  
+  text-align: left; /* Текст слева */
+  margin-bottom: 20px; /* Отступ снизу */
 }
 
 /* Контейнер кнопки */
 .btn-container {
-  align-self: flex-end;
+  text-align: right; /* Кнопка справа */
+  margin-bottom: 20px; /* Отступ снизу */
 }
 
 
@@ -134,41 +133,34 @@
 .btn-primary {
   background-color: #ffffff; /* Custom Button Color */
   border: none;
-  padding: calc(0.7rem * 1.2) calc(2rem * 1.2); /* Увеличиваем отступы на 20% */
+
   border-radius: 40px;
   font-weight: 500;
-  font-size: calc(16px * 1.2); /* Увеличиваем размер шрифта на 20% */
+  
   font-family: 'MazzardH-SemiBold', sans-serif;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
+ /* шрифт */
 
 .text-white {
   color: white !important;
 }
   
-  
-h2.display-4 {
-  font-size: 5rem; /* Увеличиваем шрифт */
-  font-weight: 500; /* Устанавливаем жирное начертание */
+.hero-heading {
+  color: white;
+  font-size: 4rem; /* Пример размера шрифта */
+  font-weight: bold;
 }
 
-p.lead {
-    font-size: 2rem; /* Увеличиваем шрифт */
-    font-weight: 500; /* Устанавливаем жирное начертание */
-
+.hero-description {
+  color: white;
+  font-size: 2rem; /* Пример размера шрифта */
+  font-style: italic;
 }
+
+
 
 
 
@@ -225,5 +217,9 @@ p.lead {
       margin-bottom: 20px;
     }
   }
+
+  body {
+  font-family: 'MazzardH-SemiBold', sans-serif;
+}
   </style>
   
