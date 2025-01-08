@@ -96,15 +96,16 @@
           <p class="mb-2">
             Copyright &copy; {{ currentYear }} All rights reserved
           </p>
-          <p class="mb-2">
-            Created by <a href="https://github.com/lopezdeniz" target="_blank">LopezDeniz</a>
-          </p>
+          
           <p class="mb-2">
             <strong>Carbon Nurture</strong>
           </p>
           <p class="mb-0">
             <a href="#" class="mr-3">Terms &amp; Conditions</a>
             <a href="#">Privacy</a>
+          </p>
+          <p class="mb-2">
+            Created by <a href="https://github.com/lopezdeniz" target="_blank">LopezDeniz</a>
           </p>
         </div>
       </div>
