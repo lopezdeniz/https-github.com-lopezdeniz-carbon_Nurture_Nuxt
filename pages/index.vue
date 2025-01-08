@@ -8,12 +8,12 @@
   
       <!-- Обертка с текстом и кнопкой -->
       <div class="content-wrapper">
-      
-        <!-- Правый блок с кнопкой -->
-       
-          <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
-       
-      </div>
+<!-- Стрелка слева от кнопки -->
+<div class="arrow arrow-right"></div>
+
+<!-- Правый блок с кнопкой -->
+<nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
+</div>
   
     </section>
   </div>
@@ -105,14 +105,16 @@
   /* Контейнер с текстом и кнопкой */
 
   .content-wrapper {
-    position: absolute;
-    bottom: 23%;
-    right: 0;
-    width: 50%; /* Занимает 50% ширины секции */
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px; /* Отступы внутри обертки */
-  }
+  position: absolute;
+  bottom: 23%;
+  right: 0;
+  width: 27%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  margin-right: 10%;
+}
   
   
   
@@ -150,7 +152,18 @@
       margin: 0 auto;
     }
   
-  
+  /* Стрелка слева от кнопки */
+.arrow-right {
+width: 30px;          /* Увеличиваем ширину стрелки */
+height: 30px;         /* Увеличиваем высоту стрелки */
+border-right: 4px solid #ffffff;  /* Увеличиваем толщину правой линии */
+border-top: 4px solid #ffffff;
+transform: rotate(45deg);
+margin-right: 0;  /* Убираем отступ между стрелкой и кнопкой */
+align-self: center; /* Убедитесь, что стрелка выровнена по центру вертикально */
+margin-left: 5px; /* Добавляем небольшой отступ слева от стрелки */
+}
+
   
   
   
