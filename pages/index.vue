@@ -135,21 +135,21 @@
   
   /* Заголовок */
   .hero-heading {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
   /* Описание */
   .hero-description {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   
   
   .btn-primary {
       background-color: #ffffff; /* Custom Button Color */
       border: none;
-    
+      font-size: 2rem;
       border-radius: 40px;
       font-weight: 500;
       
