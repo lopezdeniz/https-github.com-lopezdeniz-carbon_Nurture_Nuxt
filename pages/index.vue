@@ -24,6 +24,8 @@
   
       <!-- Pricing section -->
       <section id="pricing" class="container py-5">
+        <h2 class="text-center mb-5">YOUR FARM DESERVES THE BEST — <span class="text-secondary">NO MORE COMPROMISES</span></h2>
+
         <h2 class="text-center mb-5">Choose Your Plan</h2>
     
         <div class="row align-items-center">
@@ -35,10 +37,10 @@
                 <h5 class="card-title text-center">Small Package</h5>
                 <p class="card-text text-center">Covers X square meters. Perfect for small farms or personal use.</p>
                 <p class="text-center price">$50</p>
-                <div class="text-center">
-                  <nuxt-link class="btn btn-primary" :to="'/products'">View Details</nuxt-link>
-                </div>
               </div>
+              <div class="card-footer text-center">
+          <nuxt-link class="btn btn-success btn-lg" :to="'/products'">Select Plan</nuxt-link>
+        </div>
             </div>
           </div>
     
@@ -50,10 +52,10 @@
                 <h5 class="card-title text-center text-success">Medium Package (Recommended)</h5>
                 <p class="card-text text-center">Covers Y square meters. Ideal for medium-sized farms looking for efficiency.</p>
                 <p class="text-center price">$100</p>
-                <div class="text-center">
-                  <nuxt-link class="btn btn-primary" :to="'/products'">View Details</nuxt-link>
-                </div>
               </div>
+              <div class="card-footer text-center">
+          <nuxt-link class="btn btn-success btn-lg" :to="'/products'">Select Plan</nuxt-link>
+        </div>
             </div>
           </div>
     
@@ -65,10 +67,10 @@
                 <h5 class="card-title text-center">Large Package</h5>
                 <p class="card-text text-center">Covers Z square meters. Perfect for large-scale agricultural operations.</p>
                 <p class="text-center price">$150</p>
-                <div class="text-center">
-                  <nuxt-link class="btn btn-primary" :to="'/products'">View Details</nuxt-link>
-                </div>
               </div>
+              <div class="card-footer text-center">
+          <nuxt-link class="btn btn-success btn-lg" :to="'/products'">Select Plan</nuxt-link>
+        </div>
             </div>
           </div>
         </div>
@@ -207,13 +209,24 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     }
     
     .recommended-card {
-      transform: translateY(-10px);
+      transform: translateY(-20px);
+      
+  border: 2px solid #28a745; /* Зеленая обводка */
+  border-radius: 0.5rem; /* Скругление углов */
+
+
     }
     
     .card img {
       max-height: 200px; /* Ограничение высоты изображения */
       object-fit: cover;
     }
+
+    .card-footer {
+  background-color: #ffffff; /* Белый фон */
+
+}
+
     
     @media (max-width: 767px) {
       .card {
@@ -224,5 +237,8 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     body {
     font-family: 'MazzardH-SemiBold', sans-serif;
   }
+
+
+  
     </style>
     

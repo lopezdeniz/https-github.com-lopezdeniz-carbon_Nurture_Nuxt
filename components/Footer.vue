@@ -77,11 +77,12 @@
     <input 
       type="submit" 
       :value="isSubmitting ? 'Sending...' : 'Subscribe'" 
-      class="form-control submit px-3 rounded-right" 
+      class="form-control submit px-3 rounded-right btn btn-success" 
       :disabled="isSubmitting"
     />
   </div>
 </form>
+
 <div v-if="responseMessage" :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }" class="mt-3">
   {{ responseMessage }}
 </div>
@@ -162,6 +163,28 @@ export default {
 
 
 <style scoped>
+.submit {
+  background-color: #218838 !important;  /* Зеленый цвет из Bootstrap (btn-success) */
+  border-color: #218838 !important;
+  border-radius: 40px !important;  /* Округлые углы */
+  padding: 12px 30px !important;  /* Увеличиваем отступы для округлой формы */
+  font-size: 16px !important;  /* Размер текста */
+}
+
+.submit:hover {
+  background-color: #218838 !important;  /* Темно-зеленый цвет при наведении (btn-success hover) */
+  border-color: #1e7e34 !important;
+}
+.form-group {
+  display: flex;
+  align-items: center; /* Центрирование по вертикали */
+  gap: 10px; /* Добавление промежутка между полем ввода и кнопкой */
+}
+
+
+
+
+
 .footer-03 {
   background: #f8f9fa;
   padding: 4rem 0;
