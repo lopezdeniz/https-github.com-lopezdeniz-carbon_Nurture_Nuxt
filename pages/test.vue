@@ -91,13 +91,11 @@
   background-image: url('/assets/images/baner.jpg');
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 77vh;
-  display: flex;
-  justify-content: flex-end; /* Выравнивание контента по низу */
-  align-items: flex-end; /* Выравнивание контента по нижнему краю */
-  padding: 20px; /* Отступы для содержимого */
+  align-items: flex-end; /* Контент выравнивается по нижнему краю */
 }
+
 
 /* Контейнер для контента */
 .content-wrapper {
