@@ -1,24 +1,29 @@
 <template>
 
   <div class="custom-container">
-      <section id="hero" class="d-flex justify-content-center align-items-center position-relative">
-        <div class="content-wrapper d-flex flex-column flex-md-row justify-content-between align-items-end w-100">
-          
-          <!-- Левый блок с текстом -->
-          <div class="text-container mb-4 mb-md-0">
-          
-          </div>
-          
-          <!-- Правый блок с кнопкой -->
-          <div class="btn-container">
-            <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
-          </div>
-          
+    <section id="hero">
+  
+      <!-- Картинка -->
+      <img src="/assets/images/baner.jpg" alt="Hero Image" class="hero-image">
+  
+      <!-- Обертка с текстом и кнопкой -->
+      <div class="content-wrapper">
+        <!-- Левый текстовый блок -->
+        <div class="text-container">
+          <h2 class="hero-heading">Nurture your soil <br>and bank account:</h2>
+          <p class="hero-description">Biodegradable mulch film you can <br> leave at the end of the season.</p>
         </div>
-      </section>
-    </div>
   
+        <!-- Правый блок с кнопкой -->
+        <div class="btn-container">
+          <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
+        </div>
+      </div>
   
+    </section>
+  </div>
+  
+   
   
   
   
@@ -80,95 +85,78 @@
   /* Основной контейнер */
   .custom-container {
     max-width: 2000px;
-    margin: auto;
+    margin: 0px auto;
+    
   }
   
   /* Фоновая секция */
+  /* Секция */
+  /* Секция */
   #hero {
-    background-image: url('/assets/images/baner2.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 70vh;
-    padding: 2rem;
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    overflow: hidden;
+  }
+  
+  /* Картинка */
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
   }
   
   
-  
-  /* Контейнер для контента */
+  /* Контейнер с текстом и кнопкой */
   .content-wrapper {
-    width: 80%; /* Занимает 80% от родителя */
-    max-width: 1150px; /* Ограничение максимальной ширины */
-    margin: 0 auto; /* Центрирование по горизонтали */
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Ширина обертки */
     display: flex;
-    flex-direction: column; /* Элементы внутри будут выравниваться в колонку */
-    justify-content: flex-end; /* Элементы будут располагаться снизу */
-    padding: 0; /* Убираем отступы */
-    height: 100%; /* Занимает всю высоту родителя */
-    
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px; /* Отступы внутри обертки */
   }
   
   
-  
-  
-  /* Контейнер текста */
+  /* Левый текстовый блок */
   .text-container {
     max-width: 60%;
-    color: white;
-    text-align: left;
-    
+    color: #fff;
   }
   
-  /* Контейнер кнопки */
+  /* Правый блок с кнопкой */
   .btn-container {
-    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /* Заголовок */
+  .hero-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Описание */
+  .hero-description {
+    font-size: 1.2rem;
   }
   
   
-  
-  
-  
-  
-  
-  
-  /* Button Styles */
   .btn-primary {
-    background-color: #ffffff; /* Custom Button Color */
-    border: none;
-    padding: calc(0.7rem * 1.2) calc(2rem * 1.2); /* Увеличиваем отступы на 20% */
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: calc(16px * 1.2); /* Увеличиваем размер шрифта на 20% */
-    font-family: 'MazzardH-SemiBold', sans-serif;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .text-white {
-    color: white !important;
-  }
+      background-color: #ffffff; /* Custom Button Color */
+      border: none;
     
-    
-  h2.display-4 {
-    font-size: 5rem; /* Увеличиваем шрифт */
-    font-weight: 500; /* Устанавливаем жирное начертание */
-  }
+      border-radius: 40px;
+      font-weight: 500;
+      
+      font-family: 'MazzardH-SemiBold', sans-serif;
+    }
   
-  p.lead {
-      font-size: 2rem; /* Увеличиваем шрифт */
-      font-weight: 500; /* Устанавливаем жирное начертание */
   
-  }
   
   
   
@@ -225,7 +213,9 @@
         margin-bottom: 20px;
       }
     }
-
-
+  
+    body {
+    font-family: 'MazzardH-SemiBold', sans-serif;
+  }
     </style>
     

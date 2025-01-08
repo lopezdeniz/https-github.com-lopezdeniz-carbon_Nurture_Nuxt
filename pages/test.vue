@@ -1,24 +1,28 @@
 <template>
 
 <div class="custom-container">
-    <section id="hero" class="">
-      <div class="content-wrapper ">
-        
-        <!-- Левый блок с текстом -->
-        <div class="text-container">
-    <h2 class="hero-heading">Nurture your soil <br>and bank account:</h2>
-    <p class="hero-description">biodegradable mulch film you can <br> leave at the end of the season.</p>
+  <section id="hero">
+
+    <!-- Картинка -->
+    <img src="/assets/images/baner.jpg" alt="Hero Image" class="hero-image">
+
+    <!-- Обертка с текстом и кнопкой -->
+    <div class="content-wrapper">
+      <!-- Левый текстовый блок -->
+      <div class="text-container">
+        <h2 class="hero-heading">Nurture your soil <br>and bank account:</h2>
+        <p class="hero-description">Biodegradable mulch film you can <br> leave at the end of the season.</p>
+      </div>
+
+      <!-- Правый блок с кнопкой -->
+      <div class="btn-container">
+        <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
+      </div>
+    </div>
+
+  </section>
 </div>
 
-        
-        <!-- Правый блок с кнопкой -->
-        <div class="btn-container">
-          <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
-        </div>
-        
-      </div>
-    </section>
-  </div>
  
 
 
@@ -86,77 +90,71 @@
 }
 
 /* Фоновая секция */
-/* Фоновая секция */
+/* Секция */
+/* Секция */
 #hero {
-  background-image: url('/assets/images/baner.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 77vh;
-  align-items: flex-end; /* Контент выравнивается по нижнему краю */
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  overflow: hidden;
+}
+
+/* Картинка */
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
-/* Контейнер для контента */
+/* Контейнер с текстом и кнопкой */
 .content-wrapper {
-  width: 100%; /* Контейнер на всю ширину */
-  max-width: 1150px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Ширина обертки */
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Контент выравнивается по низу */
-  margin: 0 auto;
-  padding:87px 20px; /* Отступы по бокам */
+  align-items: flex-end;
+  padding: 20px; /* Отступы внутри обертки */
 }
 
-/* Контейнер текста */
+
+/* Левый текстовый блок */
 .text-container {
-  text-align: left; /* Текст слева */
-  margin-bottom: 20px; /* Отступ снизу */
+  max-width: 60%;
+  color: #fff;
 }
 
-/* Контейнер кнопки */
+/* Правый блок с кнопкой */
 .btn-container {
-  text-align: right; /* Кнопка справа */
-  margin-bottom: 20px; /* Отступ снизу */
+  display: flex;
+  align-items: flex-end;
 }
 
-
-
-
-
-
-
-
-/* Button Styles */
-.btn-primary {
-  background-color: #ffffff; /* Custom Button Color */
-  border: none;
-
-  border-radius: 40px;
-  font-weight: 500;
-  
-  font-family: 'MazzardH-SemiBold', sans-serif;
-}
-
-
-
- /* шрифт */
-
-.text-white {
-  color: white !important;
-}
-  
+/* Заголовок */
 .hero-heading {
-  color: white;
-  font-size: 4rem; /* Пример размера шрифта */
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
+/* Описание */
 .hero-description {
-  color: white;
-  font-size: 2rem; /* Пример размера шрифта */
-  font-style: italic;
+  font-size: 1.2rem;
 }
+
+
+.btn-primary {
+    background-color: #ffffff; /* Custom Button Color */
+    border: none;
+  
+    border-radius: 40px;
+    font-weight: 500;
+    
+    font-family: 'MazzardH-SemiBold', sans-serif;
+  }
 
 
 
