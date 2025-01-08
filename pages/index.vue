@@ -12,7 +12,7 @@
 <div class="arrow arrow-right"></div>
 
 <!-- Правый блок с кнопкой -->
-<nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
+<nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">Purchase Now</nuxt-link>
 </div>
   
     </section>
