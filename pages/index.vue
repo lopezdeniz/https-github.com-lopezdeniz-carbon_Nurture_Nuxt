@@ -4,7 +4,7 @@
     <section id="hero">
   
       <!-- Картинка -->
-      <img src="/assets/images/baner2.png" alt="Hero Image" class="hero-image">
+      <img src="/assets/images/baner3.png" alt="Hero Image" class="hero-image">
   
       <!-- Обертка с текстом и кнопкой -->
       <div class="content-wrapper">
