@@ -103,10 +103,10 @@
   
   
   /* Контейнер с текстом и кнопкой */
-  /* Контейнер с кнопкой */
+
   .content-wrapper {
     position: absolute;
-    bottom: 24%;
+    bottom: 23%;
     right: 0;
     width: 50%; /* Занимает 50% ширины секции */
     display: flex;
