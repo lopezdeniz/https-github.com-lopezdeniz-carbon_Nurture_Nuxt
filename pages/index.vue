@@ -4,20 +4,15 @@
     <section id="hero">
   
       <!-- Картинка -->
-      <img src="/assets/images/baner.jpg" alt="Hero Image" class="hero-image">
+      <img src="/assets/images/baner2.png" alt="Hero Image" class="hero-image">
   
       <!-- Обертка с текстом и кнопкой -->
       <div class="content-wrapper">
-        <!-- Левый текстовый блок -->
-        <div class="text-container">
-          <h2 class="hero-heading">Nurture your soil <br>and bank account:</h2>
-          <p class="hero-description">Biodegradable mulch film you can <br> leave at the end of the season.</p>
-        </div>
-  
+      
         <!-- Правый блок с кнопкой -->
-        <div class="btn-container">
+       
           <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">PURCHASE NOW</nuxt-link>
-        </div>
+       
       </div>
   
     </section>
@@ -108,17 +103,17 @@
   
   
   /* Контейнер с текстом и кнопкой */
+  /* Контейнер с кнопкой */
   .content-wrapper {
     position: absolute;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; /* Ширина обертки */
+    bottom: 24%;
+    right: 0;
+    width: 50%; /* Занимает 50% ширины секции */
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: flex-end;
     padding: 20px; /* Отступы внутри обертки */
   }
+  
   
   
   /* Левый текстовый блок */
@@ -142,18 +137,17 @@
   
   /* Описание */
   .hero-description {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   
   .btn-primary {
       background-color: #ffffff; /* Custom Button Color */
       border: none;
-      font-size: 2rem;
       border-radius: 40px;
       font-weight: 500;
-      
       font-family: 'MazzardH-SemiBold', sans-serif;
+      margin: 0 auto;
     }
   
   

@@ -106,7 +106,7 @@
 /* Контейнер с кнопкой */
 .content-wrapper {
   position: absolute;
-  bottom: 150px;
+  bottom: 24%;
   right: 0;
   width: 50%; /* Занимает 50% ширины секции */
   display: flex;
