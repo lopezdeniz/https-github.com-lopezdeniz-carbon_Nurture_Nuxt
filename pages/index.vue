@@ -75,6 +75,19 @@
           </div>
         </div>
       </section>
+
+      
+      <div class="container text-center my-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <span class="me-3">3 Steps</span>
+    <hr class="flex-grow-1" style="border-top: 2px solid black;"/>
+    <span class="mx-3"><h2>THE PLAN</h2></span>
+    <hr class="flex-grow-1" style="border-top: 2px solid black;"/>
+    <span class="ms-3">Carbon Nurture</span>
+  </div>
+</div>
+
+
     </template>
     
     <style scoped>
