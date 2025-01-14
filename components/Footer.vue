@@ -226,7 +226,7 @@ export default {
   color: #343a40;
 }
 .social-icon:hover {
-  color: #007bff;
+  color: #14de17;
 }
 .subscribe-form .form-control {
   border: 1px solid #ced4da;
