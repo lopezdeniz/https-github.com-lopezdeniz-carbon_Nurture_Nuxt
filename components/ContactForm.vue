@@ -120,18 +120,20 @@ export default {
   color: #dc3545;
 }
 .custom-btn {
-  background-color: #0b75cd;
-  border-color: #0b75cd;
+  background-color: #1fce48d2;
+  border-color: #1fce48d2;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 20px;
+
 }
 .custom-btn:hover {
-  background-color: #085a9c;
-  border-color: #085a9c;
+  background-color: #7cff9bd2;
+  border-color: #7cff9bd2;
 }
 </style>
 
