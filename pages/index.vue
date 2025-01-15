@@ -88,10 +88,77 @@
 </div>
 
 
+
+
+<div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card no-border-shadow h-100">
+        <div class="icon-container">
+          <img src="/assets/images/cartIcon.png" class="card-img-top icon-image" alt="Cart Icon">
+          <span class="arrow-right1"></span> <!-- Стрелка вправо -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card no-border-shadow h-100">
+        <div class="icon-container">
+          <img src="/assets/images/roleIcon.png" class="card-img-top icon-image" alt="Role Icon">
+          <span class="arrow-right1"></span> <!-- Стрелка вправо -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card no-border-shadow h-100">
+        <div class="icon-container">
+          <img src="/assets/images/handIcon.png" class="card-img-top icon-image" alt="Hand Icon">
+         
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
     </template>
     
     <style scoped>
-  
+  .icon-container {
+  position: relative;
+}
+
+.arrow-right1 {
+  width: 30px; /* Увеличиваем ширину стрелки */
+  height: 30px; /* Увеличиваем высоту стрелки */
+  border-right: 4px solid #000000; /* Черная стрелка */
+  border-top: 4px solid #000000;
+  transform: rotate(45deg);
+  margin-right: 0; /* Убираем отступ между стрелкой и картинкой */
+  align-self: center; /* Выравнивание по центру */
+  margin-left: 5px; /* Добавляем небольшой отступ слева от стрелки */
+  position: absolute;
+  right: -5px; /* Располагаем стрелку справа от картинки */
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg); /* Центрируем по вертикали */
+  cursor: pointer; /* Сделать стрелку кликабельной */
+
+}
+
   /* Основной контейнер */
   .custom-container {
     max-width: 2000px;
@@ -100,8 +167,6 @@
   }
   
   /* Фоновая секция */
-  /* Секция */
-  /* Секция */
   #hero {
     position: relative;
     width: 100%;
@@ -241,7 +306,44 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
 }
 
     
-    @media (max-width: 767px) {
+/* Блок План  */
+
+.icon-image {
+  width: 10vw; /* Иконка займет 10% ширины экрана */
+  height: auto; /* Сохранение пропорций */
+  max-width: 120px; /* Максимальный размер иконки */
+  margin: 20px auto;
+  display: block;
+}
+
+.no-border-shadow {
+  text-align: center;
+  border: none;
+  box-shadow: none;
+
+}
+
+.card-title {
+  font-size: 2vw; /* Размер шрифта адаптируется к ширине экрана */
+
+}
+
+.card-text {
+  font-size: 1.5vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
       .card {
         margin-bottom: 20px;
       }
@@ -250,8 +352,5 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     body {
     font-family: 'MazzardH-SemiBold', sans-serif;
   }
-
-
-  
     </style>
     
