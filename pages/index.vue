@@ -90,7 +90,7 @@
 
 
 
-<div class="container py-5">
+<div class="container text-center py-5">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card no-border-shadow h-100">
@@ -303,6 +303,11 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     .card-footer {
   background-color: #ffffff; /* Белый фон */
 
+}
+
+.btn-success {
+  background-color: #218838 !important; 
+  border-color: #218838 !important;    
 }
 
     
