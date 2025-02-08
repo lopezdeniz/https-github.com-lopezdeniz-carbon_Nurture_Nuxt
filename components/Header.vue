@@ -38,6 +38,9 @@
                 <nuxt-link class="nav-link" :class="{ active: isActive('/contact') }" to="/contact">Contact</nuxt-link>
               </li>
               <li class="nav-item">
+                <nuxt-link class="nav-link" :class="{ active: isActive('/shop') }" to="/shop">Shop</nuxt-link>
+              </li>
+              <li class="nav-item">
                 <nuxt-link class="nav-link" :class="{ active: isActive('/test') }" to="/test">Test</nuxt-link>
               </li>
             </ul>

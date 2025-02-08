@@ -1,8 +1,7 @@
-// nuxt.config.js
 export default defineNuxtConfig({
   css: [
-    "bootstrap/dist/css/bootstrap.min.css", // Подключение CSS Bootstrap
-    "@/assets/css/main.css" // Ваш кастомный CSS
+    "bootstrap/dist/css/bootstrap.min.css",
+    "@/assets/css/main.css"
   ],
 
   app: {
@@ -15,7 +14,8 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "stylesheet",
-          href: "https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css" // Ionicons
+          // Если данный URL не доступен, можно обновить или удалить этот ресурс.
+          href: "https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css"
         }
       ],
       script: [
@@ -35,5 +35,13 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: "2024-12-07"
+  runtimeConfig: {
+    public: {
+      WIX_API_KEY: process.env.WIX_API_KEY || "",
+      WIX_SITE_ID: process.env.WIX_SITE_ID || "",
+      WIX_SHOP_URL: process.env.WIX_SHOP_URL || ""
+    }
+  },
+
+  compatibilityDate: "2025-02-07"
 });
