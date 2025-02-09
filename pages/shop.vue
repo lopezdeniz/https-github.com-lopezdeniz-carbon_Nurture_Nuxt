@@ -1,11 +1,15 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: 'empty'
+})
+</script>
 <template>
-   
 
         <div class="wix-store">
     <!-- Встраиваем страницу магазина Wix через iframe -->
     <iframe
       src="https://shop.carbonnurture.com/category/all-products"
-      style="width:100%; height:800px; border:0;"
+      style="width:100%; height:100vh; border:0; overflow:hidden;"
       frameborder="0"
       allowfullscreen>
     </iframe>
@@ -56,7 +60,7 @@
     
   </template>
   
-  <script setup lang="ts">
+   <!--  <script setup lang="ts">
   const defaultImage = "https://via.placeholder.com/150";
   
   // Загрузка данных через useAsyncData – данные подгружаются до рендера страницы (SSR + клиент)
@@ -64,7 +68,7 @@
   
   // Для отладки можно раскомментировать:
   // console.log("Полученные данные:", wixData.value);
-  </script>
+  </script>-->
   
   <style scoped>
   .card img {
@@ -87,6 +91,7 @@
 
 <style scoped>
 .wix-store {
-  /* При необходимости добавьте стили для контейнера */
+max-width: 2000px;
+margin: 0px auto;
 }
 </style>
