@@ -29,7 +29,7 @@ export default defineEventHandler(async (event) => {
       // Настраиваем письмо для подписки
       await transporter.sendMail({
         from: `"Carbon Nurture Support" <${process.env.EMAIL_USER}>`, // От кого
-        to: "lopezdenizofficial@gmail.com", // Кому отправляем
+        to: "contact@carbonnurture.com", // Кому отправляем
         subject: "New Subscription", // Тема письма
         html: `<p><strong>Email:</strong> ${email}</p>`,
       });
@@ -48,7 +48,7 @@ export default defineEventHandler(async (event) => {
       // Настраиваем письмо для контактной формы
       await transporter.sendMail({
         from: `"Carbon Nurture Support" <${process.env.EMAIL_USER}>`, // От кого
-        to: "lopezdenizofficial@gmail.com", // Кому отправляем
+        to: "contact@carbonnurture.com", // Кому отправляем
         subject: `New Message from ${name}`, // Тема письма
         html: `
           <p><strong>Name:</strong> ${name}</p>

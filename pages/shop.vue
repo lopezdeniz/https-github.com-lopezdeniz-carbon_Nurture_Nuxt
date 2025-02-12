@@ -68,7 +68,7 @@ definePageMeta({
   
   // Для отладки можно раскомментировать:
   // console.log("Полученные данные:", wixData.value);
-  </script>-->
+  </script>
   
   <style scoped>
   .card img {
@@ -76,12 +76,7 @@ definePageMeta({
     object-fit: cover;
   }
 
-
-
-
-
-
-  </style>
+  </style>-->
   
 
 
