@@ -130,14 +130,22 @@ for generations to come.</h4>
 
  <!-- банер с иконками -->
 
-
  <div class="container position-relative p-0">
-  <!-- Фон с изображением и стрелкой -->
+  <!-- Фон с изображением -->
   <img src="/assets/images/tabl.png" class="img-fluid w-100" alt="Background Image">
 
-  
-  
+  <!-- Текстовый блок в верхнем правом углу с зеленой полосой -->
+  <div class="position-absolute top-0 end-0 text-start custom-text-box">
+    <div class="text-content">
+      <h3 class="text-success fw-bold">Are you a wholesale customer?</h3>
+      <a href="/contact" class="text-dark text-decoration-none">We have a solution for you,<br> please contact us. <i class="bi bi-box-arrow-up-right"></i></a>
+    </div>
+  </div>
 </div>
+
+
+
+
 
 
 
@@ -154,6 +162,33 @@ for generations to come.</h4>
     import "bootstrap-icons/font/bootstrap-icons.css";
     </script>
     <style scoped>
+.text-success {
+  color: #107a1d !important;
+
+
+}
+
+
+  .custom-text-box {
+    max-width: 40%; /* Ограничиваем ширину */
+    padding: 61px;
+
+  }
+
+  .text-content {
+    border-left: 3px solid #107a1d; /* Зеленая полоса */
+    padding-left: 15px;
+  }
+
+  .bi-box-arrow-up-right {
+    font-size: 14px;
+  }
+
+
+
+
+
+
   .icon-container {
   position: relative;
 }

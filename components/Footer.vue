@@ -80,17 +80,22 @@
         </div>
       </div>
       <div class="row mt-5 pt-4 border-top justify-content-center text-center">
-        <div class="col-12">
+        <div class="col-6">
+         
+          
+          <p class="mb-2 text-start">
+           Laboratory located in Massachusetts 
+              Manufactured in North Carolina 115 Morrison Ave, Thomasville, NC 27360
+          </p>
+         
+        </div>
+        <div class="col-6">
           <p class="mb-2">
             Copyright &copy; {{ currentYear }} All rights reserved
           </p>
           
           <p class="mb-2">
             <strong>Carbon Nurture</strong>
-          </p>
-          <p class="mb-0">
-            <a href="#" class="mr-3">Terms &amp; Conditions</a>
-            <a href="#">Privacy</a>
           </p>
           <p class="mb-2">
             Created by <a href="https://github.com/lopezdeniz" target="_blank">LopezDeniz</a>
