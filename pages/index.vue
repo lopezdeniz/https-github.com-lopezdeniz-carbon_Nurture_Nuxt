@@ -12,11 +12,19 @@
 <div class="arrow arrow-right"></div>
 
 <!-- Правый блок с кнопкой -->
-<nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/products'">Purchase Now</nuxt-link>
+<nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/shop'">Purchase Now</nuxt-link>
 </div>
   
     </section>
   </div>
+
+
+
+<!-- Банер со стрелкой  -->
+
+
+<!-- Банер со стрелкой  -->
+
   
    
   
@@ -39,7 +47,7 @@
                 <p class="text-center price">$50</p>
               </div>
               <div class="card-footer text-center">
-          <nuxt-link class="btn btn-success btn-lg" :to="'/products'">Select Plan</nuxt-link>
+          <nuxt-link class="btn btn-success btn-lg" :to="'/shop'">Select Plan</nuxt-link>
         </div>
             </div>
           </div>
@@ -54,7 +62,7 @@
                 <p class="text-center price">$100</p>
               </div>
               <div class="card-footer text-center">
-          <nuxt-link class="btn btn-success btn-lg" :to="'/products'">Select Plan</nuxt-link>
+          <nuxt-link class="btn btn-success btn-lg" :to="'/shop'">Select Plan</nuxt-link>
         </div>
             </div>
           </div>
@@ -69,7 +77,7 @@
                 <p class="text-center price">$150</p>
               </div>
               <div class="card-footer text-center">
-          <nuxt-link class="btn btn-success btn-lg" :to="'/products'">Select Plan</nuxt-link>
+          <nuxt-link class="btn btn-success btn-lg" :to="'/shop'">Select Plan</nuxt-link>
         </div>
             </div>
           </div>

@@ -45,7 +45,7 @@
               </li>
             </ul>
             <!-- CTA Button -->
-            <nuxt-link class="btn btn-primary text-dark" to="/purchase">Purchase Now</nuxt-link>
+            <nuxt-link class="btn btn-primary text-dark" to="/shop">Purchase Now</nuxt-link>
           </div>
         </div>
       </nav>
