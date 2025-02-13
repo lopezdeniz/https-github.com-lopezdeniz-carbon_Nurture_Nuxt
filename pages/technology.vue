@@ -11,6 +11,7 @@
       <!-- Правая часть (70%) с контентом -->
       <div class="col-md-8 col-12 d-flex align-items-center justify-content-center">
         <div class="content-box">
+         
           <div class="row justify-content-center text-center gx-5 ">
             <!-- Иконка 1 -->
             <div class="col-md-3 col-6">
@@ -115,7 +116,7 @@ definePageMeta({
 }
 
 .icon-img {
-  width: 100px; /* Регулируемый размер иконок */
+  width: 80px; /* Регулируемый размер иконок */
   height: auto;
   display: block;
   margin: 0 auto 25px;
@@ -132,12 +133,12 @@ definePageMeta({
 }
 
 .description-box {
-  border-left: 3px solid #107a1d; /* Зелёная полоса */
+  border-left: 3px solid #107a1d;
   padding-left: 15px;
-  font-size: 19px !important; 
+  font-size: clamp(14px, 1.3vw, 20px);
   font-weight: 500;
- 
 }
+
 
 
 
