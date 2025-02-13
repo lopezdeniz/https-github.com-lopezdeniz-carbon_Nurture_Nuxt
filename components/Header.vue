@@ -118,7 +118,7 @@
   font-family: 'MazzardH-SemiBold', sans-serif; 
   }
   .btn-primary:hover {
-    background-color: #05f73ed2; /* Darker Shade on Hover */
+    background-color: #19B97C; /* Darker Shade on Hover */
   }
   </style>
   

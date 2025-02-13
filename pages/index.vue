@@ -101,10 +101,43 @@ for generations to come.</h4>
   </div>
 </div>
 
+<br>
+<br>
+
+  <!-- банер с иконками -->
 
 
+  <div class="container position-relative p-0">
+  <!-- Фон с изображением и стрелкой -->
+  <img src="/assets/images/icon-baner.png" class="img-fluid w-100" alt="Background Image">
+
+  <!-- Контейнер кнопки, расположенный ниже центра -->
+  <div class="position-absolute start-50 translate-middle-x" style="top: 65%;">
+    <div class="call-btn d-flex align-items-center">
+      <!-- Левая часть с текстом -->
+      <div class="d-flex align-items-center px-3">
+        <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+      </div>
+
+      <!-- Кнопка "Call now" -->
+      <a href="tel:+12223334567" class="call-action2">
+        <i class="bi bi-telephone-forward me-2 fs-4"></i>
+        Call now 
+      </a>
+    </div>
+  </div>
+</div>
+
+ <!-- банер с иконками -->
 
 
+ <div class="container position-relative p-0">
+  <!-- Фон с изображением и стрелкой -->
+  <img src="/assets/images/tabl.png" class="img-fluid w-100" alt="Background Image">
+
+  
+  
+</div>
 
 
 
@@ -214,6 +247,10 @@ for generations to come.</h4>
       font-family: 'MazzardH-SemiBold', sans-serif;
       margin: 0 auto;
     }
+
+    .btn-primary:hover  {
+      background-color: #19B97C;
+    }
   
   /* Стрелка слева от кнопки */
 .arrow-right {
@@ -286,8 +323,6 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
   border-color: #218838 !important;    
 }
 
-    
-/* Блок План  */
 
 
 
@@ -311,7 +346,7 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
 
 /* Большая кнопка  */
 .call-btn {
-    background-color: #1e5d42; 
+    background-color: #107a1d; 
     border-radius: 50px;
     padding: 1px 3px;
     display: flex;
@@ -320,7 +355,7 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
 
   .call-action {
     background: white;
-    color: #1e5d42;
+    color: #107a1d;
     border-radius: 50px;
     padding: 1px 17px;
     font-weight: bold;
@@ -328,11 +363,28 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     margin-left: 4px;
     display: flex;
     align-items: center;
-    border: 2px solid #1e5d42;
+    border: 2px solid #107a1d;
   }
+.call-action2{
+  background: white;
+    color: #107a1d;
+    border-radius: 50px;
+    padding: 5px 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #107a1d;
+}
 
   .call-action:hover {
-    background: #1E4D34;
+    background: #19B97C;
+    color: white;
+  }
+
+  .call-action2:hover {
+    background: #19B97C;
     color: white;
   }
 
