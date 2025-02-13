@@ -98,15 +98,16 @@ definePageMeta({
 /* Стили для страницы Technology */
 .image-container {
   width: 100%;
-  height: 70vh; /* Высота на весь экран */
+  max-height: 70vh; /* Максимальная высота 70% экрана */
   overflow: hidden;
 }
 
 .image-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Заполняет контейнер без искажений */
+  height: auto; /* Убираем фиксированную высоту */
+  object-fit: contain; /* Уменьшает изображение пропорционально, без обрезки */
 }
+
 
 .content-box {
   max-width: 80%;
