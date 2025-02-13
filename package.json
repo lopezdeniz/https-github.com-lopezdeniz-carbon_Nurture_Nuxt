@@ -16,6 +16,7 @@
     "@wix/stores": "^1.0.353",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "express": "^4.21.2",
     "nodemailer": "^6.9.16",
     "nuxt": "^3.14.1592"

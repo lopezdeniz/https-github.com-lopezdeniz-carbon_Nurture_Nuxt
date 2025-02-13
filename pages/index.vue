@@ -90,13 +90,13 @@ for generations to come.</h4>
   <div class="call-btn d-flex align-items-center">
     <!-- Левая часть с текстом -->
     <div class="d-flex align-items-center px-3">
-      <i class="fas fa-phone-alt me-2"></i> <!-- Иконка звонка (FontAwesome) -->
+      <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
       <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
     </div>
-    
+
     <!-- Кнопка "Call now" -->
     <a href="tel:+12223334567" class="call-action">
-      Call now <i class="fas fa-arrow-right ms-1"></i>
+      Call now <i class="bi bi-arrow-right-circle ms-1 fs-3"></i>
     </a>
   </div>
 </div>
@@ -114,8 +114,12 @@ for generations to come.</h4>
 
 
 
+
+
     </template>
-    
+    <script setup>
+    import "bootstrap-icons/font/bootstrap-icons.css";
+    </script>
     <style scoped>
   .icon-container {
   position: relative;
@@ -309,7 +313,7 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
 .call-btn {
     background-color: #1e5d42; 
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 1px 3px;
     display: flex;
     align-items: center;
   }
@@ -318,10 +322,10 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     background: white;
     color: #1e5d42;
     border-radius: 50px;
-    padding: 8px 15px;
+    padding: 1px 17px;
     font-weight: bold;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 4px;
     display: flex;
     align-items: center;
     border: 2px solid #1e5d42;
