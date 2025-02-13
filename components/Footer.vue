@@ -1,23 +1,23 @@
 <template>
   <footer class="footer-03">
     <div class="container">
+      <img src="/assets/images/sing.png" alt="Shop Icon" class="shop-icon">
       <div class="row">
         <div class="col-md-6">
+          
           <div class="row">
             <div class="col-md-3 mb-md-0 mb-4">
+              
               <h2 class="footer-heading">Shop</h2>
               <ul class="list-unstyled">
                 <li><a href="/shop" class="py-1 d-block">Products</a></li>
-                <li><a href="/shop" class="py-1 d-block">Categories</a></li>
                 <li><a href="/shop" class="py-1 d-block">Special Offers</a></li>
               </ul>
             </div>
             <div class="col-md-3 mb-md-0 mb-4">
               <h2 class="footer-heading">About</h2>
               <ul class="list-unstyled">
-                <li><a href="/about" class="py-1 d-block">Our Story</a></li>
-                <li><a href="/about" class="py-1 d-block">Team</a></li>
-                <li><a href="/about" class="py-1 d-block">Careers</a></li>
+                <li><a href="/about" class="py-1 d-block">Technology</a></li>
               </ul>
             </div>
             <div class="col-md-3 mb-md-0 mb-4">
@@ -31,9 +31,7 @@
             <div class="col-md-3 mb-md-0 mb-4">
               <h2 class="footer-heading">FAQ</h2>
               <ul class="list-unstyled">
-                <li><a href="/faq" class="py-1 d-block">General Questions</a></li>
-                <li><a href="/faq" class="py-1 d-block">Shipping Info</a></li>
-                <li><a href="/faq" class="py-1 d-block">Support</a></li>
+                <li><a href="/faq" class="py-1 d-block">Questions FAQ</a></li>
               </ul>
             </div>
           </div>
@@ -44,18 +42,8 @@
               <h2 class="footer-heading">Follow Us</h2>
               <ul class="ftco-footer-social p-0">
                 <li class="ftco-animate">
-                  <a href="#" title="Twitter">
-                    <ion-icon name="logo-twitter" class="social-icon"></ion-icon>
-                  </a>
-                </li>
-                <li class="ftco-animate">
                   <a href="#" title="Facebook">
                     <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
-                  </a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="#" title="Instagram">
-                    <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
                   </a>
                 </li>
                 <li class="ftco-animate">
@@ -248,4 +236,19 @@ export default {
 .border-top {
   border-top: 1px solid #dee2e6 !important;
 }
+
+
+
+.shop-icon {
+  width: 40px; /* Регулируйте размер */
+  height: auto;
+  display: block;
+ margin-bottom: 2%;
+
+}
+
+.footer-03[data-v-3506faf6] {
+    padding: 2rem 0;
+}
+
 </style>
