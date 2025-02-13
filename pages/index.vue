@@ -20,124 +20,95 @@
 
 
 
-<!-- Банер со стрелкой  -->
+<!-- Банер со стрелкой -->
+<div class="container position-relative p-0">
+  <!-- Фон с изображением и стрелкой -->
+  <img src="/assets/images/arrow2.png" class="img-fluid w-100" alt="Background Image">
 
-
-<!-- Банер со стрелкой  -->
-
+  
+  
+</div>
+<!-- Банер со стрелкой -->
+<section  class="container ">
+  <h2 class="text-secondary mb-5">WHAT CARBON NURTURE  — <span class="text-dark">CAN DO FOR YOU?</span></h2>
+</section>
   
    
   
   
   
       <!-- Pricing section -->
-      <section id="pricing" class="container py-5">
-        <h2 class="text-center mb-5">YOUR FARM DESERVES THE BEST — <span class="text-secondary">NO MORE COMPROMISES</span></h2>
+    <!-- Pricing section -->
+<section id="pricing" class="container py-5">
+  <div class="row align-items-stretch"> <!-- align-items-stretch заставит все карточки быть одинаковыми -->
+    <!-- Small Package -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 position-relative shadow-hover">
+        <img src="/assets/images/card-img1.jpg" class="card-img-top rounded-top" alt="Small Package" />
+        <div class="card-body d-flex flex-column"> <!-- Flexbox для выравнивания -->
+          <h5 class="card-title text-center">Healthy Soil</h5>
+          <p class="card-text text-center flex-grow-1">Soil Enrichment: Returning organic carbon and micronutrients back to the soil after degradation.</p>
+        </div>
+      </div>
+    </div>
 
-        <h2 class="text-center mb-5">Choose Your Plan</h2>
-    
-        <div class="row align-items-center">
-          <!-- Small Package -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 position-relative shadow-hover">
-              <img src="https://images.satu.kz/185262414_w640_h640_polietilenovaya-plenka-dlya.jpg" class="card-img-top rounded-top" alt="Small Package" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Small Package</h5>
-                <p class="card-text text-center">Covers X square meters. Perfect for small farms or personal use.</p>
-                <p class="text-center price">$50</p>
-              </div>
-              <div class="card-footer text-center">
-          <nuxt-link class="btn btn-success btn-lg" :to="'/shop'">Select Plan</nuxt-link>
+    <!-- Medium Package (Recommended) -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 position-relative shadow-hover">
+        <img src="/assets/images/card-img2.jpg" class="card-img-top rounded-top" alt="Small Package" />
+        <div class="card-body d-flex flex-column"> <!-- Flexbox для выравнивания -->
+          <h5 class="card-title text-center">Time and money savings</h5>
+          <p class="card-text text-center flex-grow-1">Cost and time savings: remove pickup, hauling, and disposal expenses to optimize your resources.</p>
         </div>
-            </div>
-          </div>
-    
-          <!-- Medium Package (Recommended) -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 position-relative shadow-hover recommended-card">
-              <img src="https://m.media-amazon.com/images/I/71onNpZe6iL._AC_UL800_QL65_.jpg" class="card-img-top rounded-top" alt="Medium Package" />
-              <div class="card-body">
-                <h5 class="card-title text-center text-success">Medium Package (Recommended)</h5>
-                <p class="card-text text-center">Covers Y square meters. Ideal for medium-sized farms looking for efficiency.</p>
-                <p class="text-center price">$100</p>
-              </div>
-              <div class="card-footer text-center">
-          <nuxt-link class="btn btn-success btn-lg" :to="'/shop'">Select Plan</nuxt-link>
-        </div>
-            </div>
-          </div>
-    
-          <!-- Large Package -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 position-relative shadow-hover">
-              <img src="https://avatars.mds.yandex.net/i?id=3d766e8115cb32a15a59842f70a1b4a9_l-4135778-images-thumbs&ref=rim&n=13&w=800&h=800" class="card-img-top rounded-top" alt="Large Package" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Large Package</h5>
-                <p class="card-text text-center">Covers Z square meters. Perfect for large-scale agricultural operations.</p>
-                <p class="text-center price">$150</p>
-              </div>
-              <div class="card-footer text-center">
-          <nuxt-link class="btn btn-success btn-lg" :to="'/shop'">Select Plan</nuxt-link>
-        </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
 
+    <!-- Large Package -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 position-relative shadow-hover">
+        <img src="/assets/images/card-img3.jpeg" class="card-img-top rounded-top" alt="Large Package" />
+        <div class="card-body d-flex flex-column"> <!-- Flexbox для выравнивания -->
+          <h5 class="card-title text-center">Personalized Solutions</h5>
+          <p class="card-text text-center flex-grow-1">Reducing Carbon Footprint: Decreasing fuel and waste from removing film and hauling while also increasing soil carbon sequestration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Pricing section -->
       
       <div class="container text-center my-5">
   <div class="d-flex align-items-center justify-content-between">
-    <span class="me-3">3 Steps</span>
-    <hr class="flex-grow-1" style="border-top: 2px solid black;"/>
-    <span class="mx-3"><h2>THE PLAN</h2></span>
-    <hr class="flex-grow-1" style="border-top: 2px solid black;"/>
-    <span class="ms-3">Carbon Nurture</span>
+   <h4>We believe in the power of small changes to make a big impact. 
+By choosing Carbon Nurture, you are supporting a greener future and contributing to a healthier planet 
+for generations to come.</h4>
+  </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-center my-4">
+  <div class="call-btn d-flex align-items-center">
+    <!-- Левая часть с текстом -->
+    <div class="d-flex align-items-center px-3">
+      <i class="fas fa-phone-alt me-2"></i> <!-- Иконка звонка (FontAwesome) -->
+      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+    </div>
+    
+    <!-- Кнопка "Call now" -->
+    <a href="tel:+12223334567" class="call-action">
+      Call now <i class="fas fa-arrow-right ms-1"></i>
+    </a>
   </div>
 </div>
 
 
 
 
-<div class="container text-center py-5">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card no-border-shadow h-100">
-        <div class="icon-container">
-          <img src="/assets/images/cartIcon.png" class="card-img-top icon-image" alt="Cart Icon">
-          <span class="arrow-right1"></span> <!-- Стрелка вправо -->
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card no-border-shadow h-100">
-        <div class="icon-container">
-          <img src="/assets/images/roleIcon.png" class="card-img-top icon-image" alt="Role Icon">
-          <span class="arrow-right1"></span> <!-- Стрелка вправо -->
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card no-border-shadow h-100">
-        <div class="icon-container">
-          <img src="/assets/images/handIcon.png" class="card-img-top icon-image" alt="Hand Icon">
-         
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
+
+
 
 
 
@@ -294,14 +265,7 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
       font-size: 1.2rem;
     }
     
-    .recommended-card {
-      transform: translateY(-20px);
-      
-  border: 2px solid #28a745; /* Зеленая обводка */
-  border-radius: 0.5rem; /* Скругление углов */
-
-
-    }
+ 
     
     .card img {
       max-height: 200px; /* Ограничение высоты изображения */
@@ -321,13 +285,7 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     
 /* Блок План  */
 
-.icon-image {
-  width: 10vw; /* Иконка займет 10% ширины экрана */
-  height: auto; /* Сохранение пропорций */
-  max-width: 120px; /* Максимальный размер иконки */
-  margin: 20px auto;
-  display: block;
-}
+
 
 .no-border-shadow {
   text-align: center;
@@ -347,9 +305,37 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
 }
 
 
+/* Большая кнопка  */
+.call-btn {
+    background-color: #1e5d42; 
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
 
+  .call-action {
+    background: white;
+    color: #1e5d42;
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #1e5d42;
+  }
 
+  .call-action:hover {
+    background: #1E4D34;
+    color: white;
+  }
 
+  .fas {
+    font-size: 18px;
+  }
+/* большая кнопка  */
 
 
 
