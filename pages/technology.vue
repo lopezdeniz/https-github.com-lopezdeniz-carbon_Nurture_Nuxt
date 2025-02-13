@@ -45,11 +45,11 @@
           <div class="row justify-content-center mt-4">
             <div class="col-md-8">
               <div class="description-box text-start">
-                <p>Controlled onset and rate of degradation</p>
-                <p>(1 month - 2 years)</p>
-                <p>Patented technology</p>
-                <p>Degrades in natural environment</p>
-                <p>No microplastic after complete biodegradation</p>
+                <p>Controlled onset and rate of degradation <br>
+                (1 month - 2 years) <br>
+                Patented technology <br>
+                Degrades in natural environment <br>
+                No microplastic after complete biodegradation</p>
               </div>
             </div>
           </div>
@@ -133,8 +133,9 @@ definePageMeta({
 .description-box {
   border-left: 3px solid #107a1d; /* Зелёная полоса */
   padding-left: 15px;
-  font-size: 8px;
-  line-height: 1;
+  font-size: 19px !important; 
+  font-weight: 500;
+ 
 }
 
 
