@@ -41,17 +41,18 @@
             <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
               <h2 class="footer-heading">Follow Us</h2>
               <ul class="ftco-footer-social p-0">
-                <li class="ftco-animate">
-                  <a href="#" title="Facebook">
-                    <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
-                  </a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="#" title="LinkedIn">
-                    <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
-                  </a>
-                </li>
-              </ul>
+  <li class="ftco-animate">
+    <a href="#" title="Facebook">
+      <i class="bi bi-facebook social-icon"></i> <!-- Исправлено -->
+    </a>
+  </li>
+  <li class="ftco-animate">
+    <a href="#" title="LinkedIn">
+      <i class="bi bi-linkedin social-icon"></i> <!-- Исправлено -->
+    </a>
+  </li>
+</ul>
+
               <h2 class="footer-heading mt-5">Subscribe Us</h2>
               <form @submit.prevent="submitSubscription" class="subscribe-form">
   <div class="form-group d-flex">
@@ -154,7 +155,9 @@ export default {
   },
 };
 </script>
-
+<script setup>
+import "bootstrap-icons/font/bootstrap-icons.css";
+</script>
 
 <style scoped>
 .submit {
@@ -216,7 +219,7 @@ export default {
 }
 .social-icon {
   font-size: 2rem;
-  color: #343a40;
+  color: #000000;
 }
 .social-icon:hover {
   color: #14de17;
