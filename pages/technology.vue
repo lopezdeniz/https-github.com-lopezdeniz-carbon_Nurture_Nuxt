@@ -1,49 +1,64 @@
 <template>
-  <br>
-  <div class="container">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Левая часть (30%) с изображением -->
+      <div class="col-md-4 col-12 p-0">
+        <div class="image-container">
+          <img src="/assets/images/Technology.png" class="img-fluid" alt="Technology Image">
+        </div>
+      </div>
 
+      <!-- Правая часть (70%) с контентом -->
+      <div class="col-md-8 col-12 d-flex align-items-center justify-content-center">
+        <div class="content-box">
+          <div class="row justify-content-center text-center gx-5 ">
+            <!-- Иконка 1 -->
+            <div class="col-md-3 col-6">
+              <img src="/assets/images/icon1.png" alt="Non-Toxic Natural Minerals" class="icon-img">
+              <p class="icon-text">Non-Toxic<br>Natural Minerals</p>
+            </div>
 
-    <!-- Первая строка: иконка и первый параграф -->
-    <div class="row align-items-center mb-4">
-      
-      <div class="col-md-2 text-center">
-        
-        <img src="/assets/images/icon-leafs.png" alt="Icon 1" class="img-fluid" />
-      </div>
-      <div class="col-md-8">
-        <h1 class="mb-5">Technology</h1>
-        <p>
-          Carbon Nurture has developed environmentally biodegradable plastics to support manufacturing of sustainable materials and regenerative economy. Our technology helps re-generating healthy soils and oceans to strengthen food chains and to re-create natural reserves. Soil-biodegradable products developed by CN help mitigating climate change by reducing carbon dioxide emissions due to sequestering carbon in soil and sediments.
-        </p>
-      </div>
-    </div>
+            <!-- Плюс -->
+            <div class="col-md-1 col-2 align-self-center">
+              <h1 class="math-symbol">+</h1>
+            </div>
 
-    <!-- Вторая строка: иконка и второй параграф -->
-    <div class="row align-items-center mb-4">
-      <div class="col-md-2 text-center">
-        <img src="/assets/images/icon-leafs.png" alt="Icon 2" class="img-fluid" />
-      </div>
-      <div class="col-md-8">
-        <p>
-          Environmentally biodegradable plastics are designed for specific applications with required servicelife characteristics and properties. At their end-of-life they could be recycled biologically, physically, or chemically. Biological recycling is designed to take place at natural environmental conditions and does not require high-temperature composting infrastructure.
-        </p>
-      </div>
-    </div>
+            <!-- Иконка 2 -->
+            <div class="col-md-3 col-6">
+              <img src="/assets/images/icon2.png" alt="Conventional polymers" class="icon-img">
+              <p class="icon-text">Conventional<br>polymers</p>
+            </div>
 
-    <!-- Третья строка: иконка и третий параграф -->
-    <div class="row align-items-center mb-4">
-      <div class="col-md-2 text-center">
-        <img src="/assets/images/icon-leafs.png" alt="Icon 3" class="img-fluid" />
-      </div>
-      <div class="col-md-8">
-        <p>
-          The abiotic degradation is achieved by specially designed advanced redox-promoting catalyst, leading to complete conversion of polymers into biodegradable substances with high carbon utilization. Complete conversion prevents formation of persistent micro/nano-plastics.
-        </p>
-      </div>
-    </div>
-  </div>
-  <br>
+            <!-- Равно -->
+            <div class="col-md-1 col-2 align-self-center">
+              <h1 class="math-symbol">=</h1>
+            </div>
+
+            <!-- Иконка 3 -->
+            <div class="col-md-3 col-6">
+              <img src="/assets/images/icon3.png" alt="Carbon Nurture mulch film" class="icon-img">
+              <p class="icon-text">Carbon Nurture<br>mulch film</p>
+            </div>
+          </div>
+
+          <!-- Описание снизу -->
+          <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+              <div class="description-box text-start">
+                <p>Controlled onset and rate of degradation</p>
+                <p>(1 month - 2 years)</p>
+                <p>Patented technology</p>
+                <p>Degrades in natural environment</p>
+                <p>No microplastic after complete biodegradation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Закрываем col-md-8 -->
+    </div> <!-- Закрываем row -->
+  </div> <!-- Закрываем container-fluid -->
 </template>
+
 
 
 <script setup>
@@ -81,15 +96,47 @@ definePageMeta({
 
 <style scoped>
 /* Стили для страницы Technology */
-
-p {
-  font-size: 21px;
+.image-container {
+  width: 100%;
+  height: 70vh; /* Высота на весь экран */
+  overflow: hidden;
 }
 
-.img-fluid {
-  max-width: 60%;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняет контейнер без искажений */
+}
+
+.content-box {
+  max-width: 80%;
+  text-align: center;
+}
+
+.icon-img {
+  width: 100px; /* Регулируемый размер иконок */
   height: auto;
+  display: block;
+  margin: 0 auto 25px;
 }
+
+.icon-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.math-symbol {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description-box {
+  border-left: 3px solid #107a1d; /* Зелёная полоса */
+  padding-left: 15px;
+  font-size: 8px;
+  line-height: 1;
+}
+
 
 
 </style>
