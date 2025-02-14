@@ -1,8 +1,9 @@
 <template>
-  <section id="contact" class="container py-5">
-    <h1>Contact Us</h1>
-    <ContactForm />
-  </section>
+
+
+    
+ 
+  <ContactForm />
 </template>
 
 <script>
@@ -17,8 +18,5 @@ export default {
 </script>
 
 <style scoped>
-#contact {
-  max-width: 600px;
-  margin: 0 auto;
-}
+
 </style>

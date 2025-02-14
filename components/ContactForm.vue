@@ -1,59 +1,71 @@
 <template>
-  <section id="form" class="container py-5">
-    <form @submit.prevent="submitForm">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input
-          v-model="formData.name"
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Your name"
-          required
-        />
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input
-          v-model="formData.email"
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="Your email"
-          required
-        />
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea
-          v-model="formData.message"
-          class="form-control"
-          id="message"
-          rows="3"
-          placeholder="Your message"
-          required
-        ></textarea>
-      </div>
-      <div class="d-flex justify-content-center w-100">
-  <button 
-    type="submit" 
-    class="btn btn-primary custom-btn" 
-    :disabled="isSubmitting"
-  >
-    {{ isSubmitting ? "Sending..." : "Send" }}
-  </button>
-</div>
+   <div class="container-fluid">
+  <section id="form" class="position-relative">
+    <h3 class="contact-title text-center ">Contact Us</h3>
 
-    </form>
+    <!-- Фоновое изображение -->
+    <img src="/assets/images/contactBaner.jpg" class="img-fluid w-100 banner-img" alt="Background Image">
 
-    <!-- Центрирование сообщения -->
-  <div v-if="responseMessage" class="d-flex justify-content-center mt-3">
-    <div :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }">
-      {{ responseMessage }}
+    <!-- Контейнер формы (размещается в левой части) -->
+    <div class="form-overlay">
+      <form @submit.prevent="submitForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            v-model="formData.name"
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            v-model="formData.email"
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            v-model="formData.message"
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Your message"
+            required
+          ></textarea>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+          <button 
+            type="submit" 
+            class="btn btn-primary custom-btn" 
+            :disabled="isSubmitting"
+          >
+            {{ isSubmitting ? "Sending..." : "Send" }}
+          </button>
+        </div>
+      </form>
+
+      <!-- Центрирование сообщения -->
+      <div v-if="responseMessage" class="d-flex justify-content-center mt-3">
+        <div :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }">
+          {{ responseMessage }}
+        </div>
+      </div>
     </div>
-  </div>
   </section>
+</div>
 </template>
+
+
+
 
 <script>
 export default {
@@ -109,32 +121,69 @@ export default {
 </script>
 
 <style scoped>
+/* Контейнер секции */
 #form {
-  max-width: 600px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
-.text-success {
-  color: #28a745;
-}
-.text-danger {
-  color: #dc3545;
-}
-.custom-btn {
-  background-color: #218838;
-  border-color: #218838;
-  color: white;
-  padding: 0.5rem 3rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  border-radius: 20px;
 
+/* Фоновое изображение */
+.banner-img {
+  width: 100%;
+  height: 70vh;
 }
+
+/* Контейнер формы (размещение в левой части изображения) */
+.form-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%; /* Отступ слева */
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+
+  border-radius: 10px;
+  width: 50%;
+  max-width: 400px;
+}
+
+/* Кастомная кнопка */
+.custom-btn {
+  background-color: #107a1d; /* Зеленый цвет */
+  border-color: #107a1d;
+  padding: 8px 50px;
+  border-radius: 30px;
+}
+
 .custom-btn:hover {
-  background-color: #05f73ed2;
-  border-color: #00ff3cd2;
+  background-color: #19B97C;
+  border-color: #19B97C;
 }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .form-overlay {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем форму на мобильных */
+  }
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto; /* Центрирует контейнер */
+}
+
+.contact-title {
+  position: absolute;
+  top: 10%; /* Регулирует отступ сверху */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem; /* Размер шрифта */
+  font-weight: 500;
+  z-index: 10; /* Чтобы было поверх изображения */
+}
+
+
 </style>
 
 
