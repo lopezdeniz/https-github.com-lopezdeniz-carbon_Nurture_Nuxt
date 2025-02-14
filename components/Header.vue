@@ -124,8 +124,7 @@
 
   @media (max-width: 991px) {
   .navbar-collapse {
-    background-color: #107a1d;
-    background-image: url('/assets/images/your-background-image.jpg'); /* замените путь на нужный */
+    background-image: url('/assets/images/header.png'); /* замените путь на нужный */
     background-size: cover;
     background-position: center;
     z-index: 100;
