@@ -1,21 +1,37 @@
 <template>
 
-  <div class="custom-container">
+<div class="custom-container">
     <section id="hero">
-  
-      <!-- Картинка -->
-      <img src="/assets/images/baner3.png" alt="Hero Image" class="hero-image">
-  
-      <!-- Обертка с текстом и кнопкой -->
-      <div class="content-wrapper">
-<!-- Стрелка слева от кнопки -->
-<div class="arrow arrow-right"></div>
+      <!-- Десктопная версия (по умолчанию) -->
+      <div class="desktop-hero">
+        <img src="/assets/images/baner3.png" alt="Hero Image" class="hero-image">
+        <div class="content-wrapper">
+          <div class="arrow arrow-right"></div>
+          <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/shop'">Purchase Now</nuxt-link>
+        </div>
+      </div>
 
-<!-- Правый блок с кнопкой -->
-<nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/shop'">Purchase Now</nuxt-link>
+      <!-- Новая мобильная версия (только для экранов ≤ 600px) -->
+      <div class="mobile-hero">
+  <!-- Картинка -->
+  <div class="image-container">
+    <img src="/assets/images/mobail-baner.png" alt="Mobile Hero Image" class="mobile-hero-image">
+    
+    <!-- Кнопка в центре -->
+    <nuxt-link class="btn btn-primary text-dark btn-lg custom-btn" :to="'/shop'">Purchase Now</nuxt-link>
+  </div>
 </div>
-  
+
     </section>
+    <div class="container">
+    <h4 class="standards-text text-start">
+  STANDARDS: 100% biodegradable per ASTM D6954, 5988 
+  and EN17033 with exposure. Passes all soil toxicity tests- 
+  plants germination and growth per OECD208, earthworms 
+  acute toxicity per OECD 207, luminescent bacteria EN ISO 
+  11348-3:2019, freshwater OECD test No. 202 or 211.
+</h4>
+</div>
   </div>
 
 
@@ -144,28 +160,19 @@ for generations to come.</h4>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     </template>
     <script setup>
     import "bootstrap-icons/font/bootstrap-icons.css";
     </script>
     <style scoped>
+.desktop-hero {
+  display: block;
+}
+.mobile-hero {
+  display: none;
+}
 .text-success {
   color: #107a1d !important;
-
-
 }
 
 
@@ -453,18 +460,91 @@ padding: 0px;
 
 
 @media (max-width: 768px) {
+  .standards-text {
+    display: block; /* Показываем текст только на мобильных */
+    color: #000; /* Черный цвет */
+    font-size: 1.25rem; /* Размер текста h4 по Bootstrap */
+    font-weight: 500; /* Средняя жирность */
+    text-align: center; /* Выравнивание текста */
+    margin-top: 20px; /* Отступ сверху */
+  }
+
+
       .card {
         margin-bottom: 20px;
       }
+      .desktop-hero {
+    display: none; /* Скрываем старую версию */
+  }
+  .mobile-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+/* 📌 Контейнер для картинки и кнопки */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 📌 Картинка адаптивная */
+  .mobile-hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* 📌 Кнопка поверх картинки, по центру */
+  .custom-btn {
+    position: absolute;
+    top: 80%; /* Центрируем кнопку по умолчанию */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: white;
+    color: #107a1d;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+   
+    transition: 0.3s ease-in-out;
+  }
+
+  /* 📌 Эффект наведения */
+  .custom-btn:hover {
+    background-color: #107a1d;
+    color: white;
+  }
+
+
+
+
+
+
+
+
     }
   
     body {
     font-family: 'MazzardH-SemiBold', sans-serif;
   }
 
+  @media (min-width: 769px) {
+  .standards-text {
+    display: none;
+  }
+}
+
 
   @media (max-width: 600px) {
- 
+  
 }
 @media (max-width: 425px) {
 
