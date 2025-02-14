@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
       return response;
     } catch (error) {
       console.error("Ошибка при загрузке товаров:", error);
-      // Передаём ошибку дальше, чтобы ее обработал клиентский код
+    
       throw error;
     }
   });
