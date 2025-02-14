@@ -55,7 +55,7 @@
     <!-- Medium Package (Recommended) -->
     <div class="col-md-4 mb-4">
       <div class="card h-100 position-relative shadow-hover">
-        <img src="/assets/images/card-img2.jpg" class="card-img-top rounded-top" alt="Small Package" />
+        <img src="/assets/images/card-img3.jpg" class="card-img-top rounded-top" alt="Small Package" />
         <div class="card-body d-flex flex-column"> <!-- Flexbox для выравнивания -->
           <h5 class="card-title text-center">Time and money savings</h5>
           <p class="card-text text-center flex-grow-1">Cost and time savings: remove pickup, hauling, and disposal expenses to optimize your resources.</p>
@@ -66,7 +66,7 @@
     <!-- Large Package -->
     <div class="col-md-4 mb-4">
       <div class="card h-100 position-relative shadow-hover">
-        <img src="/assets/images/card-img3.jpeg" class="card-img-top rounded-top" alt="Large Package" />
+        <img src="/assets/images/card-img2.jpg" class="card-img-top rounded-top" alt="Large Package" />
         <div class="card-body d-flex flex-column"> <!-- Flexbox для выравнивания -->
           <h5 class="card-title text-center">Personalized Solutions</h5>
           <p class="card-text text-center flex-grow-1">Reducing Carbon Footprint: Decreasing fuel and waste from removing film and hauling while also increasing soil carbon sequestration.</p>
