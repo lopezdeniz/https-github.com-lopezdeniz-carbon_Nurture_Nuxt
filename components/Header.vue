@@ -26,22 +26,16 @@
                 <nuxt-link class="nav-link" :class="{ active: isActive('/') }" to="/">Home</nuxt-link>
               </li>
               <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/about') }" to="/about">About</nuxt-link>
+                <nuxt-link class="nav-link" :class="{ active: isActive('/about') }" to="/technology">About</nuxt-link>
               </li>
               <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/products') }" to="/products">Products</nuxt-link>
+                <nuxt-link class="nav-link" :class="{ active: isActive('/products') }" to="/shop">Products</nuxt-link>
               </li>
               <li class="nav-item">
                 <nuxt-link class="nav-link" :class="{ active: isActive('/technology') }" to="/technology">Technology</nuxt-link>
               </li>
               <li class="nav-item">
                 <nuxt-link class="nav-link" :class="{ active: isActive('/contact') }" to="/contact">Contact</nuxt-link>
-              </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/shop') }" to="/shop">Shop</nuxt-link>
-              </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/test') }" to="/test">Test</nuxt-link>
               </li>
             </ul>
             <!-- CTA Button -->
