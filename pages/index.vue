@@ -463,6 +463,27 @@ padding: 0px;
   }
 
 
+  @media (max-width: 600px) {
+ 
+}
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+@media (max-width: 320px) {
+
+}
+
+
+
+
+
+
+
+
   /* media  */
     </style>
     
