@@ -1,140 +1,135 @@
+<script setup>
+import { ref, watchEffect } from 'vue';
+import { useRoute } from 'vue-router';
+
+// Управление состоянием мобильного меню
+const isMenuOpen = ref(false);
+const route = useRoute();
+
+// Функция для переключения меню
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
+// Функция закрытия меню при клике на пункт
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+
+// Автоматическое закрытие меню при смене маршрута
+watchEffect(() => {
+  isMenuOpen.value = false;
+});
+
+// Проверка активного маршрута
+const isActive = (path) => route.path === path;
+</script>
+
 <template>
-    <header class="header-bg">
-      <nav class="navbar navbar-expand-lg"> <!-- Header Color -->
-        <div class="container">
-          <!-- Logo -->
-          <nuxt-link class="navbar-brand" to="/">
-  <img src="/assets/images/logo.png" alt="Carbon Nurture Logo" />
-</nuxt-link>
+  <header class="header-bg">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Логотип -->
+        <nuxt-link class="navbar-brand" to="/">
+          <img src="/assets/images/logo.png" alt="Carbon Nurture Logo" />
+        </nuxt-link>
 
-          <!-- Toggle Button for Mobile -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navigation Links -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/') }" to="/">Home</nuxt-link>
-              </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/about') }" to="/technology">About</nuxt-link>
-              </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/products') }" to="/shop">Products</nuxt-link>
-              </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/technology') }" to="/technology">Technology</nuxt-link>
-              </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" :class="{ active: isActive('/contact') }" to="/contact">Contact</nuxt-link>
-              </li>
-            </ul>
-            <!-- CTA Button -->
-            <nuxt-link class="btn btn-primary text-dark cta-btn" to="/shop">Purchase Now</nuxt-link>
+        <!-- Кнопка-бургер -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          @click="toggleMenu"
+          :aria-expanded="isMenuOpen"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          </div>
+        <!-- Навигационное меню -->
+        <div
+          :class="['collapse', 'navbar-collapse', { show: isMenuOpen }]"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <nuxt-link class="nav-link" :class="{ active: isActive('/') }" to="/" @click="closeMenu">Home</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" :class="{ active: isActive('/technology') }" to="/technology" @click="closeMenu">About</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" :class="{ active: isActive('/products') }" to="/shop" @click="closeMenu">Products</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" :class="{ active: isActive('/technology') }" to="/technology" @click="closeMenu">Technology</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" :class="{ active: isActive('/contact') }" to="/contact" @click="closeMenu">Contact</nuxt-link>
+            </li>
+          </ul>
+
+          <!-- CTA-кнопка -->
+          <nuxt-link class="btn btn-primary text-dark cta-btn" to="/shop" @click="closeMenu">Purchase Now</nuxt-link>
         </div>
-      </nav>
-    </header>
-  </template>
-  
-  <script>
-  export default {
-    name: "PageHeader",
-    methods: {
-      isActive(path) {
-        return this.$route.path === path; // Проверяем, является ли текущий маршрут активным
-      },
-    },
-  };
-  </script>
-  
-  <style scoped>
-  /* Header Styles */
+      </div>
+    </nav>
+  </header>
+</template>
+
+<style scoped>
+/* Фон хедера */
 .header-bg {
-  background-image: url('/assets/images/header.png'); /*  путь к изображению */
+  background-image: url('/assets/images/header.png');
   background-size: cover;
   background-position: center;
-  height: 100px; 
+  height: 100px;
 }
 
-  /* Logo Styles */
-  .navbar-brand {
+/* Логотип */
+.navbar-brand {
   display: flex;
   align-items: center;
 }
-  .navbar-brand img {
-  height: 50px; 
-  width: auto;  /* Автоматическая ширина для пропорционального масштабирования */
+.navbar-brand img {
+  height: 50px;
+  width: auto;
 }
 
- /* Navigation Link Styles */
- .nav-link {
-  color: #ffffff; /* Link Color */
-  font-weight: 500; /* Полужирный текст */
+/* Стили навигации */
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
   font-size: 18px;
-  font-family: 'MazzardH-SemiBold', sans-serif; 
+  font-family: 'MazzardH-SemiBold', sans-serif;
   transition: color 0.3s ease;
 }
-
-
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px; /*  высота совпадает с высотой шапки */
+.nav-link:hover {
+  color: #0B6E4F;
 }
-  .nav-link:hover {
-    color: #0B6E4F; /* Hover Color */
-  }
-  .nav-link.active {
-   
-    color: #ffffff; /* Active Color */
-  }
-  
-  /* Button Styles */
-  .btn-primary {
-    background-color: #ffffff; /* Custom Button Color */
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 30px;
-    font-weight: 500; 
+.nav-link.active {
+  color: #ffffff;
+}
+
+/* Кнопка */
+.btn-primary {
+  background-color: #ffffff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
   font-size: 18px;
-  font-family: 'MazzardH-SemiBold', sans-serif; 
-  }
-  .btn-primary:hover {
-    background-color: #107a1d;  /* Darker Shade on Hover */
-  }
+  font-family: 'MazzardH-SemiBold', sans-serif;
+}
+.btn-primary:hover {
+  background-color: #107a1d;
+}
 
-
-
-
-
-
-
-  @media (max-width: 991px) {
+/* Адаптивность */
+@media (max-width: 991px) {
   .navbar-collapse.show {
-    background-image: url('/assets/images/header.png'); 
+    background-image: url('/assets/images/header.png');
     background-size: cover;
     background-position: center;
     z-index: 100;
-    flex-direction: column;
-  }
-
-  .navbar-collapse.show .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .navbar-collapse.show > .cta-btn {
@@ -158,8 +153,24 @@
   background-position: top, center, bottom;
 }
 
+.navbar-collapse.show .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
+</style>
 
 
-  </style>
+
+
+
+
+
+
+}
+*/
+
+
   
