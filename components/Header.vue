@@ -130,6 +130,7 @@ const isActive = (path) => route.path === path;
     background-size: cover;
     background-position: center;
     z-index: 100;
+    border-radius: 20px;
   }
 
   .navbar-collapse.show > .cta-btn {
