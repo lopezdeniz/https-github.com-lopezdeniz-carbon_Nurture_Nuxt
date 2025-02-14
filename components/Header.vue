@@ -129,11 +129,11 @@
     background-size: cover;
     background-position: center;
     z-index: 100;
-  }
-
-  .navbar-collapse  {
     display: flex;
     flex-direction: column;
+  }
+
+  .navbar-collapse .navbar-nav {
     align-items: center;
   }
 }
