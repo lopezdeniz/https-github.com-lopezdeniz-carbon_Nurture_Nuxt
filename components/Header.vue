@@ -39,7 +39,8 @@
               </li>
             </ul>
             <!-- CTA Button -->
-            <nuxt-link class="btn btn-primary text-dark" to="/shop">Purchase Now</nuxt-link>
+            <nuxt-link class="btn btn-primary text-dark cta-btn" to="/shop">Purchase Now</nuxt-link>
+
           </div>
         </div>
       </nav>
@@ -121,21 +122,44 @@
 
 
 
-
   @media (max-width: 991px) {
-  .navbar-collapse {
-    background-image: url('/assets/images/header.png'); /* замените путь на нужный */
+  .navbar-collapse.show {
+    background-image: url('/assets/images/header.png'); 
     background-size: cover;
     background-position: center;
     z-index: 100;
-    display: flex;
     flex-direction: column;
   }
 
-  .navbar-collapse .navbar-nav {
+  .navbar-collapse.show .navbar-nav {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
+
+  .navbar-collapse.show > .cta-btn {
+    display: table;
+    margin: 1rem auto 1rem;
+    
+  }
+
+  .navbar-toggler {
+  border-color: white;
 }
+.navbar-toggler-icon {
+  background-color: transparent !important;
+  border: none;
+  background-image: 
+    linear-gradient(white, white),
+    linear-gradient(white, white),
+    linear-gradient(white, white);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: top, center, bottom;
+}
+
+}
+
 
   </style>
   
