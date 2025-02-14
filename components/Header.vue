@@ -112,7 +112,31 @@
   font-family: 'MazzardH-SemiBold', sans-serif; 
   }
   .btn-primary:hover {
-    background-color: #19B97C; /* Darker Shade on Hover */
+    background-color: #107a1d;  /* Darker Shade on Hover */
   }
+
+
+
+
+
+
+
+
+  @media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #107a1d;
+    background-image: url('/assets/images/your-background-image.jpg'); /* замените путь на нужный */
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+  }
+
+  .navbar-collapse  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
   </style>
   
