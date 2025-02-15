@@ -108,7 +108,7 @@ for generations to come.</h4>
     <!-- Левая часть с текстом -->
     <div class="d-flex align-items-center px-3">
       <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
-      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+      <span class="text-white">Try our product now: <strong><br>+1 222-333-4567</strong></span>
     </div>
 
     <!-- Кнопка "Call now" -->
@@ -129,10 +129,10 @@ for generations to come.</h4>
   <img src="/assets/images/icon-baner.png" class="img-fluid w-100 icon-baner1" alt="Background Image">
   <!-- Контейнер кнопки, расположенный ниже центра -->
   <div class=" position-absolute start-50 translate-middle-x" style="top: 65%;">
-    <div class="call-btn2 d-flex align-items-center">
+    <div class="call-btn d-flex align-items-center">
       <!-- Левая часть с текстом -->
       <div class="d-flex align-items-center px-3 ">
-        <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+        <span class="text-white">Try our product now: <strong><br>+1 222-333-4567</strong></span>
       </div>
 
       <!-- Кнопка "Call now" -->
@@ -143,16 +143,18 @@ for generations to come.</h4>
     </div>
   </div>
 </div>
-  <!-- Фон с изображением и стрелкой -->
+  <!-- Фон с изображением и стрелкой мобильная-->
 <div class="container position-relative p-0 call-btn-act2">
   <img src="/assets/images/icon-baner2.jpg" class="img-fluid w-100 icon-baner2" alt="Background Image">
 </div>
-<div class="d-flex align-items-center justify-content-center my-4">
-  <div class="call-btn d-flex align-items-center">
+<!-- кнопка мобильная-->
+ <div class="container">
+<div class="d-flex align-items-center justify-content-center my-4 mobail-btn ">
+  <div class="call-btn2 d-flex align-items-center">
     <!-- Левая часть с текстом -->
     <div class="d-flex align-items-center px-3">
       <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
-      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+      <span class="text-white">Try our product now: <strong><br>+1 222-333-4567</strong></span>
     </div>
 
     <!-- Кнопка "Call now" -->
@@ -161,7 +163,7 @@ for generations to come.</h4>
     </a>
   </div>
 </div>
-
+</div>
  <!-- банер с иконками -->
 
  <div class="container position-relative p-0 tabl-desctop">
@@ -408,45 +410,46 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     
   }
 
-  .call-btn2 {
-    background-color: #107a1d; 
-    border-radius: 50px;
-    padding: 1px 3px;
-    display: flex;
-    align-items: center;
-    position: absolute;
+  /* 📌 Стили для кнопки */
+.call-btn2 {
+  background-color: #107a1d;
+  border-radius: 50px;
+  padding: 12px 24px; /* Оптимальное пространство внутри */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%); /* Центрируем кнопку */
-
   color: #107a1d;
-  border-radius: 50px;
-  padding: 17px 1px;
   font-weight: bold;
   text-decoration: none;
+  border: 2px solid #107a1d;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  width: auto;
+  max-width: 100%; /* Запрещаем выход за границы */
+  height: 50px;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+  overflow: hidden; /* Гарантируем, что текст не выйдет за границы */
+}
+
+/* 📌 Исправленная кнопка */
+.call-action {
+  background: white;
+  color: #107a1d;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #107a1d;
   white-space: nowrap;
-  width: auto;
-  height: 50px;
-  font-size: 1rem;
-  transition: 0.3s ease-in-out;
-    
-  }
+}
 
-  .call-action {
-    background: white;
-    color: #107a1d;
-    border-radius: 50px;
-    padding: 1px 17px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 4px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #107a1d;
-  }
 .call-action2{
   background: white;
     color: #107a1d;
@@ -511,6 +514,10 @@ padding: 0px;
 
 
 @media (max-width: 768px) {
+  .mobail-btn {
+    padding-top: 4%;
+  }
+ 
   .textw {
     margin-top: 27px;
   }
@@ -521,7 +528,9 @@ padding: 0px;
 .all-btn-act {
   display: none;
 }
-
+.call-action2{
+  display: none;
+}
 
   .icon-baner1 {
   display: none;
@@ -535,7 +544,7 @@ padding: 0px;
   }
   .standards-text {
     display: block; /* Показываем текст только на мобильных */
-    color: #000; /* Черный цвет */
+    color: #107a1d; 
     font-size: 1.20rem; /* Размер текста h4 по Bootstrap */
     font-weight: 500; /* Средняя жирность */
     text-align: center; /* Выравнивание текста */
@@ -596,7 +605,9 @@ padding: 0px;
     background-color: #107a1d;
     color: white;
   }
-
+.tabl-mobail {
+  padding-top: 4% !important;
+}
 
     }
   
@@ -605,6 +616,9 @@ padding: 0px;
   }
 
   @media (min-width: 769px) {
+    .mobail-btn{
+      display: none !important;
+    }
   .standards-text {
     display: none;
   }
