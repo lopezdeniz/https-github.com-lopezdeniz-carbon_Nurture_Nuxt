@@ -102,21 +102,39 @@ By choosing Carbon Nurture, you are supporting a greener future and contributing
 for generations to come.</h4>
   </div>
 </div>
-
-<div class="d-flex align-items-center justify-content-center my-4">
-  <div class="call-btn d-flex align-items-center">
+ <!-- desctop btn -->
+<div class="d-flex align-items-center justify-content-center my-4 desctop-btn">
+  <!-- Вся кнопка теперь является ссылкой -->
+  <a href="tel:+12223334567" class="call-btn d-flex align-items-center text-decoration-none">
     <!-- Левая часть с текстом -->
     <div class="d-flex align-items-center px-3">
       <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
-      <span class="text-white">Try our product now: <strong><br>+1 222-333-4567</strong></span>
+      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
     </div>
-
-    <!-- Кнопка "Call now" -->
-    <a href="tel:+12223334567" class="call-action">
+    
+    <!-- Текст кнопки -->
+    <span class="call-action">
       Call now <i class="bi bi-arrow-right-circle ms-1 fs-3"></i>
-    </a>
-  </div>
+    </span>
+  </a>
 </div>
+ <!-- mobail btn -->
+<div class="d-flex align-items-center justify-content-center my-4 mobail-btn3">
+  <!-- Вся кнопка теперь является ссылкой -->
+  <a href="tel:+12223334567" class="call-btn2 d-flex align-items-center text-decoration-none">
+    <!-- Левая часть с текстом -->
+    <div class="d-flex align-items-center px-3">
+      <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
+      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+    </div>
+    
+    <!-- Текст кнопки -->
+    <span class="call-action">
+      Call now <i class="bi bi-arrow-right-circle ms-1 fs-3"></i>
+    </span>
+  </a>
+</div>
+
 
 <br>
 <br>
@@ -128,20 +146,23 @@ for generations to come.</h4>
   <!-- Фон с изображением и стрелкой -->
   <img src="/assets/images/icon-baner.png" class="img-fluid w-100 icon-baner1" alt="Background Image">
   <!-- Контейнер кнопки, расположенный ниже центра -->
-  <div class=" position-absolute start-50 translate-middle-x" style="top: 65%;">
-    <div class="call-btn d-flex align-items-center">
-      <!-- Левая часть с текстом -->
-      <div class="d-flex align-items-center px-3 ">
-        <span class="text-white">Try our product now: <strong><br>+1 222-333-4567</strong></span>
-      </div>
-
-      <!-- Кнопка "Call now" -->
-      <a href="tel:+12223334567" class="call-action2">
-        <i class="bi bi-telephone-forward me-2 fs-4"></i>
-        Call now 
-      </a>
+    <!-- Desctop btn-->
+  <div class="position-absolute start-50 translate-middle-x" style="top: 65%;">
+  <!-- Вся кнопка теперь является ссылкой -->
+  <a href="tel:+12223334567" class="call-btn2 d-flex align-items-center text-decoration-none">
+    <!-- Левая часть с текстом -->
+    <div class="d-flex align-items-center px-3">
+      <span class="text-white">Try our product now: <strong><br class="mobile-break">+1 222-333-4567</strong></span>
     </div>
-  </div>
+
+    <!-- Текст кнопки -->
+    <span class="call-action2">
+      <i class="bi bi-telephone-forward me-2 fs-4"></i>
+      Call now
+    </span>
+  </a>
+</div>
+
 </div>
   <!-- Фон с изображением и стрелкой мобильная-->
 <div class="container position-relative p-0 call-btn-act2">
@@ -150,7 +171,7 @@ for generations to come.</h4>
 <!-- кнопка мобильная-->
  <div class="container">
 <div class="d-flex align-items-center justify-content-center my-4 mobail-btn ">
-  <div class="call-btn2 d-flex align-items-center">
+  <div class="call-btn3 d-flex align-items-center">
     <!-- Левая часть с текстом -->
     <div class="d-flex align-items-center px-3">
       <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
@@ -178,8 +199,8 @@ for generations to come.</h4>
     </div>
   </div>
 </div>
-<div class="container position-relative p-0 tabl-mobail">
-  <img src="/assets/images/tabl.jpg" class="img-fluid w-100" alt="Background Image">
+<div class=" position-relative p-0 tabl-mobail">
+  <img src="/assets/images/tabl-mobail.jpg" class="img-fluid w-100" alt="Background Image">
 </div>
 
     </template>
@@ -187,6 +208,12 @@ for generations to come.</h4>
     import "bootstrap-icons/font/bootstrap-icons.css";
     </script>
     <style scoped>
+    .tabl-mobail {
+  display: none;
+}
+    .mobile-break{
+      display: none;
+    }
 .textbearrow {
   display: block;
 }    
@@ -402,16 +429,33 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
 
 /* Большая кнопка  */
 .call-btn {
-    background-color: #107a1d; 
-    border-radius: 50px;
-    padding: 1px 3px;
-    display: flex;
-    align-items: center;
+  align-items: center;
+background-color: #107a1d;
+border-radius: 50px;
+display: flex;
+padding: 1px 3px;
+}
+
+.call-btn2 {
+  align-items: center;
+background-color: #107a1d;
+border-radius: 50px;
+display: flex;
+padding: 1px 3px;
+}
+
+.call-btn3{
+  align-items: center;
+background-color: #107a1d;
+border-radius: 50px;
+display: flex;
+padding: 1px 3px;
+}
     
-  }
+  
 
   /* 📌 Стили для кнопки */
-.call-btn2 {
+.call-btn3 {
   background-color: #107a1d;
   border-radius: 50px;
   padding: 12px 24px; /* Оптимальное пространство внутри */
@@ -439,7 +483,7 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
   background: white;
   color: #107a1d;
   border-radius: 50px;
-  padding: 10px 20px;
+  padding: 4px 20px;
   font-weight: bold;
   text-decoration: none;
   margin-left: 4px;
@@ -492,7 +536,18 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
   /* CSS-правила для больших ноутбуков и мониторов */
 }
 @media (max-width: 1200px) {
-  /* CSS-правила для стандартных ноутбуков и небольших мониторов */
+ .tabl-desctop {
+  display: none;
+ }
+ .mobile-break {
+  display: block;
+ }
+ .tabl-mobail {
+  display: block !important;
+}
+}
+@media (min-width: 1200px) {
+
 }
 @media (max-width: 1024px) {
   /* CSS-правила для небольших ноутбуков и десктопов */
@@ -514,12 +569,24 @@ padding: 0px;
 
 
 @media (max-width: 768px) {
+  
+  .call-btn2 {
+align-items: center;
+background-color: #107a1d;
+border-radius: 50px;
+display: flex;
+padding: 0px 2px;
+}
+
   .mobail-btn {
     padding-top: 4%;
   }
  
   .textw {
     margin-top: 27px;
+  }
+  .desctop-btn{
+    display: none !important;
   }
 .tabl-desctop{
   display: none;
@@ -616,6 +683,11 @@ padding: 0px;
   }
 
   @media (min-width: 769px) {
+    .mobail-btn3 {
+      display: none !important;
+    }
+
+
     .mobail-btn{
       display: none !important;
     }
@@ -634,9 +706,7 @@ padding: 0px;
 .call-btn-act2 {
   display: none;
 }
-.tabl-mobail {
-  display: none;
-}
+
 
 
 
