@@ -124,15 +124,14 @@ for generations to come.</h4>
   <!-- банер с иконками -->
 
 
-  <div class="container position-relative p-0">
+  <div class="container position-relative p-0 call-btn-act">
   <!-- Фон с изображением и стрелкой -->
-  <img src="/assets/images/icon-baner.png" class="img-fluid w-100" alt="Background Image">
-
+  <img src="/assets/images/icon-baner.png" class="img-fluid w-100 icon-baner1" alt="Background Image">
   <!-- Контейнер кнопки, расположенный ниже центра -->
-  <div class="position-absolute start-50 translate-middle-x" style="top: 65%;">
+  <div class=" position-absolute start-50 translate-middle-x" style="top: 65%;">
     <div class="call-btn2 d-flex align-items-center">
       <!-- Левая часть с текстом -->
-      <div class="d-flex align-items-center px-3">
+      <div class="d-flex align-items-center px-3 ">
         <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
       </div>
 
@@ -144,10 +143,28 @@ for generations to come.</h4>
     </div>
   </div>
 </div>
+  <!-- Фон с изображением и стрелкой -->
+<div class="container position-relative p-0 call-btn-act2">
+  <img src="/assets/images/icon-baner2.jpg" class="img-fluid w-100 icon-baner2" alt="Background Image">
+</div>
+<div class="d-flex align-items-center justify-content-center my-4">
+  <div class="call-btn d-flex align-items-center">
+    <!-- Левая часть с текстом -->
+    <div class="d-flex align-items-center px-3">
+      <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
+      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+    </div>
+
+    <!-- Кнопка "Call now" -->
+    <a href="tel:+12223334567" class="call-action">
+      Call now <i class="bi bi-arrow-right-circle ms-1 fs-3"></i>
+    </a>
+  </div>
+</div>
 
  <!-- банер с иконками -->
 
- <div class="container position-relative p-0">
+ <div class="container position-relative p-0 tabl-desctop">
   <!-- Фон с изображением -->
   <img src="/assets/images/tabl.png" class="img-fluid w-100" alt="Background Image">
 
@@ -159,7 +176,9 @@ for generations to come.</h4>
     </div>
   </div>
 </div>
-
+<div class="container position-relative p-0 tabl-mobail">
+  <img src="/assets/images/tabl.jpg" class="img-fluid w-100" alt="Background Image">
+</div>
 
     </template>
     <script setup>
@@ -492,9 +511,21 @@ padding: 0px;
 
 
 @media (max-width: 768px) {
-  .textw{
+  .textw {
     margin-top: 27px;
   }
+.tabl-desctop{
+  display: none;
+}
+
+.all-btn-act {
+  display: none;
+}
+
+
+  .icon-baner1 {
+  display: none;
+}
   .arrow-desctop {
     display: none;
   }
@@ -583,6 +614,18 @@ padding: 0px;
   .textbearrow{
     display: none;
   }
+  .icon-baner2 {
+  display: none;
+}
+.call-btn-act2 {
+  display: none;
+}
+.tabl-mobail {
+  display: none;
+}
+
+
+
 }
 
 
