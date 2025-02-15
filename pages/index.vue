@@ -11,7 +11,7 @@
         </div>
       </div>
 
-      <!-- Новая мобильная версия (только для экранов ≤ 600px) -->
+      <!-- Новая мобильная версия (только для экранов ≤ 768px) -->
       <div class="mobile-hero">
   <!-- Картинка -->
   <div class="image-container">
@@ -23,7 +23,25 @@
 </div>
 
     </section>
-    <div class="container">
+ 
+  </div>
+<!-- Новая мобильная версия (только для экранов ≤ 768px) -->
+  <div class="container">
+  <h2 class="text-secondary  textbearrow">THE BIG PROBLEMS <br>  <span class="text-dark">WE SOLVE</span></h2>
+  </div>
+<!-- Банер со стрелкой -->
+<div class="container position-relative p-0 ">
+  <!-- Фон с изображением и стрелкой -->
+  <img src="/assets/images/arrow2.png" class="img-fluid w-100 arrow-desctop" alt="Background Image">
+ <!-- Новая мобильная версия (только для экранов ≤ 768px) -->
+ <img src="/assets/images/arrow3.jpg" class="img-fluid w-100 arrow-mobail" alt="Background Image">
+  
+</div>
+<!-- Банер со стрелкой -->
+<section  class="container textw ">
+  <h2 class="text-secondary mb-5">WHAT CARBON NURTURE <br> <span class="text-dark">CAN DO FOR YOU?</span></h2>
+</section>
+<div class="container">
     <h4 class="standards-text text-start">
   STANDARDS: 100% biodegradable per ASTM D6954, 5988 
   and EN17033 with exposure. Passes all soil toxicity tests- 
@@ -32,23 +50,6 @@
   11348-3:2019, freshwater OECD test No. 202 or 211.
 </h4>
 </div>
-  </div>
-
-
-
-<!-- Банер со стрелкой -->
-<div class="container position-relative p-0">
-  <!-- Фон с изображением и стрелкой -->
-  <img src="/assets/images/arrow2.png" class="img-fluid w-100" alt="Background Image">
-
-  
-  
-</div>
-<!-- Банер со стрелкой -->
-<section  class="container ">
-  <h2 class="text-secondary mb-5">WHAT CARBON NURTURE  — <span class="text-dark">CAN DO FOR YOU?</span></h2>
-</section>
-  
    
   
   
@@ -129,7 +130,7 @@ for generations to come.</h4>
 
   <!-- Контейнер кнопки, расположенный ниже центра -->
   <div class="position-absolute start-50 translate-middle-x" style="top: 65%;">
-    <div class="call-btn d-flex align-items-center">
+    <div class="call-btn2 d-flex align-items-center">
       <!-- Левая часть с текстом -->
       <div class="d-flex align-items-center px-3">
         <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
@@ -165,6 +166,9 @@ for generations to come.</h4>
     import "bootstrap-icons/font/bootstrap-icons.css";
     </script>
     <style scoped>
+.textbearrow {
+  display: block;
+}    
 .desktop-hero {
   display: block;
 }
@@ -382,6 +386,34 @@ margin-left: 5px; /* Добавляем небольшой отступ слев
     padding: 1px 3px;
     display: flex;
     align-items: center;
+    
+  }
+
+  .call-btn2 {
+    background-color: #107a1d; 
+    border-radius: 50px;
+    padding: 1px 3px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Центрируем кнопку */
+
+  color: #107a1d;
+  border-radius: 50px;
+  padding: 17px 1px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #107a1d;
+  white-space: nowrap;
+  width: auto;
+  height: 50px;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+    
   }
 
   .call-action {
@@ -460,13 +492,24 @@ padding: 0px;
 
 
 @media (max-width: 768px) {
+  .textw{
+    margin-top: 27px;
+  }
+  .arrow-desctop {
+    display: none;
+  }
+  .textbearrow {
+    display: block; 
+    margin-top: 20px;
+  }
   .standards-text {
     display: block; /* Показываем текст только на мобильных */
     color: #000; /* Черный цвет */
-    font-size: 1.25rem; /* Размер текста h4 по Bootstrap */
+    font-size: 1.20rem; /* Размер текста h4 по Bootstrap */
     font-weight: 500; /* Средняя жирность */
     text-align: center; /* Выравнивание текста */
     margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px;
   }
 
 
@@ -524,12 +567,6 @@ padding: 0px;
   }
 
 
-
-
-
-
-
-
     }
   
     body {
@@ -538,6 +575,12 @@ padding: 0px;
 
   @media (min-width: 769px) {
   .standards-text {
+    display: none;
+  }
+  .arrow-mobail{
+    display: none;
+  }
+  .textbearrow{
     display: none;
   }
 }
