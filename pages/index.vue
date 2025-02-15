@@ -570,6 +570,14 @@ padding: 0px;
 
 @media (max-width: 768px) {
   
+  .card-title {
+    font-size: 1.5rem; /* Увеличенный заголовок */
+  }
+
+  .card-text {
+    font-size: 1.2rem; /* Увеличенный текст */
+  }
+
   .call-btn2 {
 align-items: center;
 background-color: #107a1d;
