@@ -23,9 +23,9 @@
     <div class="col-3 col-md-3 mb-4">
       <h2 class="footer-heading">Legal</h2>
       <ul class="list-unstyled">
-        <li><a href="/legal" class="py-1 d-block">Terms & Conditions</a></li>
-        <li><a href="/legal" class="py-1 d-block">Privacy Policy</a></li>
-        <li><a href="/legal" class="py-1 d-block">Refund Policy</a></li>
+        <li><a href="/faq" class="py-1 d-block">Terms & Conditions</a></li>
+        <li><a href="/faq" class="py-1 d-block">Privacy Policy</a></li>
+        <li><a href="/faq" class="py-1 d-block">Refund Policy</a></li>
       </ul>
     </div>
     
