@@ -16,7 +16,7 @@
     <div class="col-3 col-md-3 mb-4">
       <h2 class="footer-heading">About</h2>
       <ul class="list-unstyled">
-        <li><a href="/about" class="py-1 d-block">Technology</a></li>
+        <li><a href="/technology" class="py-1 d-block">Technology</a></li>
       </ul>
     </div>
     
