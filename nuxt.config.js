@@ -12,8 +12,16 @@ export default defineNuxtConfig({
       title: "Carbon Nurture",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-        { name: "description", content: "Описание вашего сайта" },
-        { name: "keywords", content: "carbon, sustainability, environment, eco-friendly, green energy" }
+        { 
+          name: "description", 
+          content: "Carbon Nurture company develops sustainable, biodegradable mulch films and eco-friendly solutions for agriculture. Our innovative technology reduces carbon footprint and promotes soil health for a greener future." 
+        }
+        ,
+        { 
+          name: "keywords", 
+          content: "mulch film, biodegradable film, biodegradable mulch film, biodegradable mulch, agriculture, water management, biodegradation, eco-friendly mulch film, compostable mulch film, sustainable mulch film, environmentally friendly mulch, degradable plastic mulch, agricultural mulch film, horticultural mulch film, plastic alternative mulch, greenhouse mulch film, row crop mulch, soil health mulch film, weed control mulch film, moisture retention mulch" 
+        }
+        
       ],
       link: [
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
