@@ -125,7 +125,7 @@ for generations to come.</h4>
     <!-- Левая часть с текстом -->
     <div class="d-flex align-items-center px-3">
       <i class="bi bi-telephone-forward me-2 text-white fs-3"></i> 
-      <span class="text-white">Try our product now: <strong>+1 222-333-4567</strong></span>
+      <span class="text-white">Try our product now: <strong><br class="mobile-break">+1 222-333-4567</strong></span>
     </div>
     
     <!-- Текст кнопки -->
