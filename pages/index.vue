@@ -189,7 +189,7 @@ for generations to come.</h4>
 
  <div class="container position-relative p-0 tabl-desctop">
   <!-- Фон с изображением -->
-  <img src="/assets/images/tabl.png" class="img-fluid w-100" alt="Background Image">
+  <img src="/assets/images/tabl.jpg" class="img-fluid w-100" alt="Background Image">
 
   <!-- Текстовый блок в верхнем правом углу с зеленой полосой -->
   <div class="position-absolute top-0 end-0 text-start custom-text-box">
