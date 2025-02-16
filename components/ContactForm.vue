@@ -62,6 +62,16 @@
     </div>
   </section>
 </div>
+<div class="contact-info">
+    <p>contact@carbonnurture.com</p>
+    <p>
+      Laboratory located in Massachusetts<br>
+      Manufactured in North Carolina 115 Morrison Ave, Thomasville, NC 27360
+    </p>
+    <p>
+      <a href="tel:+12223334567" class="cell-contact">+1 222-333-4567</a>
+    </p>
+  </div>
 </template>
 
 
@@ -121,6 +131,18 @@ export default {
 </script>
 
 <style scoped>
+.cell-contact{
+  text-decoration: none;
+  color: black;
+}
+.contact-info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 20px;
+ 
+}
 /* Контейнер секции */
 #form {
   position: relative;
@@ -158,18 +180,8 @@ export default {
   background-color: #19B97C;
   border-color: #19B97C;
 }
-
-/* Адаптивность */
-@media (max-width: 768px) {
-  .form-overlay {
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Центрируем форму на мобильных */
-  }
-}
-
 .container-fluid {
-  max-width: 1200px;
+  max-width: 1065px;
   margin: 0 auto; /* Центрирует контейнер */
 }
 
@@ -181,6 +193,51 @@ export default {
   font-size: 2rem; /* Размер шрифта */
   font-weight: 500;
   z-index: 10; /* Чтобы было поверх изображения */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .form-overlay {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем форму на мобильных */
+  }
+}
+
+@media (max-width: 963px) {
+.banner-img {
+  display: none;
+}
+.form-overlay {
+    position: relative; /* Отмена абсолютного позиционирования */
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 20px auto; /* Центрирование по горизонтали с отступом сверху/снизу */
+  }
+  .contact-title {
+    position: relative; /* Сбрасываем абсолютное позиционирование */
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 20px 0; /* Отступ сверху и снизу */
+    text-align: center;
+  }
+
+
+
+
+  /* Делает ссылку на телефон визуально понятнее */
+  .contact-info a {
+    color: #107a1d;
+    text-decoration: none;
+  }
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+
+
 }
 
 
