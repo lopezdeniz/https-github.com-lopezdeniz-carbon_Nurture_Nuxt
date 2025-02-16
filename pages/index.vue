@@ -569,6 +569,20 @@ padding: 0px;
 
 
 @media (max-width: 768px) {
+
+  .custom-container {
+    max-width: 100% !important;
+    overflow-x: hidden; /* подстраховка, если что-то всё же вылезет */
+  }
+
+  /* Сбрасываем абсолютное позиционирование, чтобы контент не вылезал за границы */
+  .content-wrapper {
+    position: static;
+    bottom: auto;
+    right: auto;
+    width: auto;
+    margin-right: 0;
+  }
   
   .card-title {
     font-size: 1.5rem; /* Увеличенный заголовок */
