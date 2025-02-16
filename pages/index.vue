@@ -466,7 +466,7 @@ padding: 1px 3px;
   left: 50%;
   transform: translateX(-50%); /* Центрируем кнопку */
   color: #107a1d;
-  font-weight: bold;
+ 
   text-decoration: none;
   border: 2px solid #107a1d;
   white-space: nowrap; /* Запрещаем перенос строк */
