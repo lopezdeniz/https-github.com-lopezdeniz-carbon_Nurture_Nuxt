@@ -57,9 +57,10 @@
         </div>
       </div> 
     </div>
-        <!-- Фон баннера для мобильных -->
+        <!-- Фон баннера для мобильных 991 -->
     <img src="/assets/images/Technology.jpg" class="mobail-teh-ferst" alt="Technology Image">
-    
+      <!-- Фон баннера для мобильных 768 -->
+      <img src="/assets/images/tehnology-mobail.jpg" class="mobail-teh-ferst1" alt="Technology Image">
 <br>
    <!-- about -->
    <div class="container">
@@ -281,7 +282,9 @@ definePageMeta({
   display: none;
 }
 
-
+.mobail-teh-ferst1{
+  display: none;
+}
 .mobail-teh-ferst{
   display: none;
 }
@@ -509,9 +512,15 @@ display: none;
 
 
 @media (max-width: 768px) {
+  .mobail-teh-ferst{
+  display: none;
 
-
-
+  }
+  .mobail-teh-ferst1{
+  display: block;
+  width: 100%;
+    height: auto;
+  }
     }
   
  
