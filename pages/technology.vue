@@ -294,7 +294,7 @@ definePageMeta({
 }
 
 .container-fluid2 {
-  max-width: 1350px;
+  max-width: 1450px;
   margin: 0 auto; /* Центрирует контейнер */
 }
 .container-fluid3 {
@@ -411,7 +411,7 @@ display: none;
 /* Контейнер для текста и флага */
 .banner-info {
   position: absolute;
-  bottom: 30px; /* Отступ от нижнего края баннера */
+  bottom: 0px; /* Отступ от нижнего края баннера */
   right: 40px; /* Отступ от правого края */
   display: flex;
   align-items: center;
