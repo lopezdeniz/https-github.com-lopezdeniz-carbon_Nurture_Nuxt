@@ -184,7 +184,7 @@
 <div class="row mt-3">
   <!-- Текст -->
   <div class="col-6 text-center">
-    <p class="banner-text-custom">
+    <p class="banner-text-custom text-start">
       Carbon Nurture is a US company <br>
       with all research and manufacturing <br>
       facilities located in the US.
@@ -500,7 +500,9 @@ display: none;
   display: block;
 }
 
-
+.banner-text-custom{
+  font-weight: 600;
+}
 
 
 
